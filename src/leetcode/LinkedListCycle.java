@@ -10,7 +10,7 @@ public class LinkedListCycle {
 
 }
 
-class Solution {
+class LinkedListCycleSolution {
 
 	class ListNode {
 		int val;
