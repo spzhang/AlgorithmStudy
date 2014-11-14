@@ -12,15 +12,7 @@ public class LinkedListCycle {
 
 class LinkedListCycleSolution {
 
-	class ListNode {
-		int val;
-		ListNode next;
 
-		ListNode(int x) {
-			val = x;
-			next = null;
-		}
-	}
 
 	public boolean hasCycle(ListNode head) {
 
