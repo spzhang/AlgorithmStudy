@@ -6,8 +6,6 @@ package leetcode;
 
 public class Helper {
 
-	
-
 }
 
 class TreeNode {
@@ -29,3 +27,9 @@ class ListNode {
 		next = null;
 	}
 }
+
+class TreeLinkNode {
+     int val;
+     TreeLinkNode left, right, next;
+     TreeLinkNode(int x) { val = x; }
+ }
