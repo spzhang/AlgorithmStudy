@@ -44,7 +44,7 @@ class PopulatingNextRightPointersInEachNodeSolution {
         if(null == root) return;
         
         ArrayList<TreeLinkNode> list1 = new ArrayList<TreeLinkNode>();
-        ArrayList<TreeLinkNode> list2 = new ArrayList<TreeLinkNode>();
+        ArrayList<TreeLinkNode> list2 = new ArrayList<TreeLinkNode>();  //to store next row.
         
         list1.add(root);
         while(list1.size() != 0){
