@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class BinaryTreeInorderTraversal {
+public class BinaryTreeInorderTraversal   {
 
 }
 

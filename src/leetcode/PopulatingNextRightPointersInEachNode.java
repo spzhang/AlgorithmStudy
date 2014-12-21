@@ -44,13 +44,12 @@ class PopulatingNextRightPointersInEachNodeSolution {
         if(null == root) return;
         
         ArrayList<TreeLinkNode> list1 = new ArrayList<TreeLinkNode>();
-        ArrayList<TreeLinkNode> list2 = new ArrayList<TreeLinkNode>();  //to store next row.
+        ArrayList<TreeLinkNode> list2 = new ArrayList<TreeLinkNode>();  //to store next row.d
         
         list1.add(root);
         while(list1.size() != 0){
             ListIterator<TreeLinkNode> i = list1.listIterator();
             TreeLinkNode current = i.next();
-
             while(i.hasNext()){
                 if(null!=current.left){
                     list2.add(current.left);
