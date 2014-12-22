@@ -10,6 +10,7 @@ public class ClimbingStairs {
 
 }
 
+// this is just fabnacci
 class ClimbingStairsSolution {
     public int climbStairs(int n) {
         if(n==1) return 1;
