@@ -1,32 +1,31 @@
 package leetcode;
 
 /*
-Given a binary tree, return the inorder traversal of its nodes' values.
+ Given a binary tree, return the inorder traversal of its nodes' values.
 
-For example:
-Given binary tree {1,#,2,3},
+ For example:
+ Given binary tree {1,#,2,3},
 
-   1
-    \
-     2
-    /
-   3
+ 1
+ \
+ 2
+ /
+ 3
 
-return [1,3,2]. 
+ return [1,3,2]. 
  */
 
 import java.util.ArrayList;
 import java.util.List;
 
-
-public class BinaryTreeInorderTraversal   {
+public class BinaryTreeInorderTraversal {
 
 }
 
 class BinaryTreeInorderTraversalSolution {
-    public List<Integer> inorderTraversal(TreeNode root) {
-        
-	List<Integer> list = new ArrayList<Integer>();
+	public List<Integer> inorderTraversal(TreeNode root) {
+
+		List<Integer> list = new ArrayList<Integer>();
 		if (root == null)
 			return list;
 		visit(root, list);
@@ -35,7 +34,7 @@ class BinaryTreeInorderTraversalSolution {
 	}
 
 	public void visit(TreeNode node, List<Integer> list) {
-		
+
 		if (null != node.left) {
 			visit(node.left, list);
 		}
@@ -45,5 +44,5 @@ class BinaryTreeInorderTraversalSolution {
 		}
 
 	}
-	
+
 }
