@@ -1,15 +1,20 @@
-public class Solution {
+package leetcode;
+
+/*
+ Given an array S of n integers, find three integers in S such that the sum is closest to a given number, target. Return the sum of the three integers. You may assume that each input would have exactly one solution.
+
+ For example, given array S = {-1 2 1 -4}, and target = 1.
+
+ The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
+ */
+
+public class ThreeSumClosest {
+
+}
+
+class ThreeSumClosestSolution {
 	int[] result = new int[3];
 	int close = 0;
-
-	public static void main(String[] args) {
-		int[] num = { -1 ,2, 1, -4 };
-		
-		Solution s = new Solution();
-		System.out.println(s.threeSumClosest(num, 1));
-		
-
-	}
 
 	public int threeSumClosest(int[] num, int target) {
 		if (num == null)
@@ -21,6 +26,7 @@ public class Solution {
 			}
 			return sum;
 		} else {
+			close = num[0] + num[1] + num[2];
 			subset(num, target, 0, 0);
 			return close;
 		}
@@ -42,6 +48,8 @@ public class Solution {
 			} else {
 				return;
 			}
+		} else if (close == target) {
+			return;
 		} else {
 			result[count] = num[lvl];
 			subset(num, target, lvl + 1, count + 1);
