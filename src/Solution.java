@@ -1,29 +1,52 @@
-
 public class Solution {
-
+	
 	public static void main(String[] args) {
-		System.out.println(Math.pow(1.00001, 123456));
-		String a = "a".substring(0,1);
-		System.out.println(a);
+		Solution s = new Solution();
+		int[] num = {1,1};
+		s.nextPermutation(num);
+		System.out.println(num);
 	}
 
-	
-	 public int minDistance(String word1, String word2) {
-	        int n = word1.length();
-	        int m = word2.length();
-	        if(n == 0) return m;
-	        if(m == 0) return n;
-	        char[] w1 = word1.toCharArray();
-	        char[] w2 = word2.toCharArray();
-	        int[][] result = new int[n][m];
-	        result[0][0] = w1[0] == w2[0] ? 1 : 0;
-	        for(int i = 1; i < m; i++){
-	            result[0][i] = w1[i] == w2[i] ? result[0][i-1] + 1: result[0][i-1];
-	        }
-	        for(int i = 1; i < m; i++){
-	            result[0][i] = w1[i] == w2[i] ? result[0][i-1] + 1: result[0][i-1];
-	        }
-	        
-	        return 0;
-	    }
+	 void nextPermutation(int[] num) {
+		int n = num.length;
+		if (n == 0 || n == 1)
+			return;
+		int index = n - 1;
+		while (index > 0) {
+			if (num[index] > num[index - 1]) {
+				break;
+			}
+			index--;
+		}
+		if (index == 0) {
+			reverse(num, 0, n - 1);
+			return;
+		} else {
+			int left = index - 1;
+			while (index < n && num[index] > num[left]) {
+				index++;
+			}
+			int right = index - 1;
+			exchange(num, left, right);
+			reverse(num, left + 1, right);
+		}
+	}
+
+	void exchange(int[] num, int l, int r) {
+		int tmp = num[r];
+		num[r] = num[l];
+		num[l] = tmp;
+	}
+
+	void reverse(int[] num, int i, int j) {
+		int l = i;
+		int r = j;
+		while (l < r) {
+			exchange(num, l, r);
+			l++;
+			r--;
+		}
+
+	}
+
 }
