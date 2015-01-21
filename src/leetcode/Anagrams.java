@@ -1,15 +1,21 @@
+package leetcode;
+
+/*
+ Given an array of strings, return all groups of strings that are anagrams.
+
+ Note: All inputs will be in lower-case.
+ */
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
-public class Solution {
+public class Anagrams {
 
-	public static void main(String[] args) {
-		String[] test = {"ant", "ant"};
-		System.out.println(new Solution().anagrams(test));
-		System.out.println(new Solution().toSort("ant"));
-	}
+}
+
+class AnagramsSolution {
 
 	List<String> result = new ArrayList<String>();
 	HashMap<String, String> map = new HashMap<String, String>();
