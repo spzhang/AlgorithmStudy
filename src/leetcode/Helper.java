@@ -1,5 +1,8 @@
 package leetcode;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /*
  * data structure in algorithm
  */
@@ -43,5 +46,15 @@ class RandomListNode {
 
 	RandomListNode(int x) {
 		this.label = x;
+	}
+}
+
+class UndirectedGraphNode {
+	int label;
+	List<UndirectedGraphNode> neighbors;
+
+	UndirectedGraphNode(int x) {
+		label = x;
+		neighbors = new ArrayList<UndirectedGraphNode>();
 	}
 };
