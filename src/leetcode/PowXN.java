@@ -1,7 +1,7 @@
 package leetcode;
 
 /*
- * (UNSOLOVED)
+ (UNSOLOVED)
  Implement pow(x, n). 
  divide and conquer
  */

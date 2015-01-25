@@ -1,9 +1,9 @@
 package leetcode;
 
 /*
-Given a roman numeral, convert it to an integer.
+ Given a roman numeral, convert it to an integer.
 
-Input is guaranteed to be within the range from 1 to 3999.
+ Input is guaranteed to be within the range from 1 to 3999.
  */
 public class RomanToInteger {
 
@@ -13,14 +13,13 @@ class RomanToIntegerSolution {
 	public int romanToInt(String s) {
 		int n = s.length();
 		int total = 0;
-		int max=0;
-		int temp =0;
-		for(int i= n-1; i > -1; i--){
-			if((temp = parseRoman(s.charAt(i))) >= max){
+		int max = 0;
+		int temp = 0;
+		for (int i = n - 1; i > -1; i--) {
+			if ((temp = parseRoman(s.charAt(i))) >= max) {
 				max = temp;
 				total += temp;
-			}
-			else{
+			} else {
 				total -= temp;
 			}
 		}
@@ -44,7 +43,7 @@ class RomanToIntegerSolution {
 		case 'I':
 			return 1;
 		}
-		
+
 		return 0;
 	}
 }

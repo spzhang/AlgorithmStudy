@@ -8,6 +8,7 @@ package leetcode;
  b = "1"
  Return "100". 
  */
+
 public class AddBinary {
 
 }
