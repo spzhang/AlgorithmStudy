@@ -1,11 +1,24 @@
-
-
 /*
  * data structure in algorithm
  */
 
 public class Helper {
 
+}
+
+class Interval {
+	int start;
+	int end;
+
+	Interval() {
+		start = 0;
+		end = 0;
+	}
+
+	Interval(int s, int e) {
+		start = s;
+		end = e;
+	}
 }
 
 class TreeNode {
@@ -29,7 +42,10 @@ class ListNode {
 }
 
 class TreeLinkNode {
-     int val;
-     TreeLinkNode left, right, next;
-     TreeLinkNode(int x) { val = x; }
- }
+	int val;
+	TreeLinkNode left, right, next;
+
+	TreeLinkNode(int x) {
+		val = x;
+	}
+}
