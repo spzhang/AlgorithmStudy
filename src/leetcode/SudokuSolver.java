@@ -1,30 +1,22 @@
+package leetcode;
+
+/*
+ Write a program to solve a Sudoku puzzle by filling the empty cells.
+
+ Empty cells are indicated by the character '.'.
+
+ You may assume that there will be only one unique solution. 
+ */
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 
-public class Solution {
+public class SudokuSolver {
 
-	public static void main(String[] args) {
+}
 
-		Solution s = new Solution();
-		char[][] board = { { '.', '.', '9', '7', '4', '8', '.', '.', '.' },
-				{ '7', '.', '.', '.', '.', '.', '.', '.', '.' },
-				{ '.', '2', '.', '1', '.', '9', '.', '.', '.' },
-				{ '.', '.', '7', '.', '.', '.', '2', '4', '.' },
-				{ '.', '6', '4', '.', '1', '.', '5', '9', '.' },
-				{ '.', '9', '8', '.', '.', '.', '3', '.', '.' },
-				{ '.', '.', '.', '8', '.', '3', '.', '2', '.' },
-				{ '.', '.', '.', '.', '.', '.', '.', '.', '6' },
-				{ '.', '.', '.', '2', '7', '5', '9', '.', '.' } };
-		s.solveSudoku(board);
-
-		for (int i = 0; i < 9; i++) {
-			for (int j = 0; j < 9; j++) {
-				System.out.println(board[i][j]);
-			}
-		}
-
-	}
+class SudokuSolverSolution {
 
 	class BlankSpot {
 		int i;
