@@ -13,6 +13,27 @@ import java.util.HashSet;
 import java.util.List;
 
 public class SudokuSolver {
+	public static void main(String[] args) {
+
+		SudokuSolverSolution s = new SudokuSolverSolution();
+		char[][] board = { { '.', '.', '9', '7', '4', '8', '.', '.', '.' },
+				{ '7', '.', '.', '.', '.', '.', '.', '.', '.' },
+				{ '.', '2', '.', '1', '.', '9', '.', '.', '.' },
+				{ '.', '.', '7', '.', '.', '.', '2', '4', '.' },
+				{ '.', '6', '4', '.', '1', '.', '5', '9', '.' },
+				{ '.', '9', '8', '.', '.', '.', '3', '.', '.' },
+				{ '.', '.', '.', '8', '.', '3', '.', '2', '.' },
+				{ '.', '.', '.', '.', '.', '.', '.', '.', '6' },
+				{ '.', '.', '.', '2', '7', '5', '9', '.', '.' } };
+		s.solveSudoku(board);
+
+		for (int i = 0; i < 9; i++) {
+			for (int j = 0; j < 9; j++) {
+				System.out.println(board[i][j]);
+			}
+		}
+
+	}
 
 }
 
