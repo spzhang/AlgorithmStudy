@@ -1,13 +1,22 @@
+package leetcode;
+
+/*
+ (take care of "010" is illegal!)
+ Given a string containing only digits, restore it by returning all possible valid IP address combinations.
+
+ For example:
+ Given "25525511135",
+
+ return ["255.255.11.135", "255.255.111.35"]. (Order does not matter) 
+ */
 import java.util.ArrayList;
 import java.util.List;
 
-public class Solution {
+public class RestoreIPAddresses {
 
-	public static void main(String[] args) {
-		Solution s = new Solution();
-		System.out.println(s.restoreIpAddresses("010010"));
-	}
+}
 
+class RestoreIPAddressesSolution {
 	List<String> result = new ArrayList<String>();
 	List<String> temp = new ArrayList<String>();
 
@@ -41,7 +50,8 @@ public class Solution {
 					temp.remove(temp.size() - 1);
 					if (pos < n - 2) {
 						String cur3 = s.substring(pos, pos + 3);
-						if (Integer.valueOf(cur3) < 256 && !cur3.startsWith("0")) {
+						if (Integer.valueOf(cur3) < 256
+								&& !cur3.startsWith("0")) {
 							temp.add(cur3);
 							build(s, pos + 3, count + 1, n);
 							temp.remove(temp.size() - 1);
