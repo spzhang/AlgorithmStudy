@@ -59,8 +59,8 @@ public class MaximumGap {
 	/* radix sort */
 	class Solution {
 
-		List<Integer> zeros = new ArrayList<>();
-		List<Integer> ones = new ArrayList<>();
+		List<Integer> zeros = new ArrayList<Integer>();
+		List<Integer> ones = new ArrayList<Integer>();
 
 		public int maximumGap(int[] num) {
 			if (num == null || num.length < 2) {

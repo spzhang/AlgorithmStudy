@@ -1,6 +1,6 @@
-public class Solution {
-	public int longestValidParentheses(String s) {
 
-		return 0;
-	}
+
+public class Solution {
+
+
 }
