@@ -1,15 +1,25 @@
+package leetcode;
+
+/*
+ You are given a string, S, and a list of words, L, that are all of the same length. Find all starting indices of substring(s) in S that is a concatenation of each word in L exactly once and without any intervening characters.
+
+ For example, given:
+ S: "barfoothefoobarman"
+ L: ["foo", "bar"]
+
+ You should return the indices: [0,9].
+ (order does not matter). 
+ */
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class Solution {
-	public static void main(String[] args) {
-		String S = "lingmindraboofooowingdingbarrwingmonkeypoundcake";
-		String[] L = { "fooo", "barr", "wing", "ding", "wing" };
-		Solution s = new Solution();
-		System.out.println(s.findSubstring(S, L));
-	}
+public class SubstringwithConcatenationofAllWords {
 
+}
+
+class SubstringwithConcatenationofAllWordsSolution {
 	List<Integer> ret = new ArrayList<Integer>();
 
 	public List<Integer> findSubstring(String S, String[] L) {
@@ -31,19 +41,21 @@ public class Solution {
 		for (int i = 0; i < n - m * k + 1; i++) {
 			HashMap<String, Integer> temp = new HashMap<String, Integer>(map);
 			for (int j = 0; j < m; j++) {
-				String s = S.substring(i+j*k, i+(j+1)*k);
-				if(temp.containsKey(s)){
-					if(temp.get(s)-1==0){
+				String s = S.substring(i + j * k, i + (j + 1) * k);
+				if (temp.containsKey(s)) {
+					if (temp.get(s) - 1 == 0) {
 						temp.remove(s);
-					}else{
-						temp.put(s,temp.get(s)-1);
+					} else {
+						temp.put(s, temp.get(s) - 1);
 					}
-				}else{
+				} else {
 					break;
 				}
 			}
-			if(temp.size()==0) ret.add(i);
+			if (temp.size() == 0)
+				ret.add(i);
 		}
 		return ret;
 	}
+
 }
