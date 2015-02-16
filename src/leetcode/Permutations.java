@@ -38,10 +38,8 @@ class PermutationsSolution {
 				results.add(result);
 		} else {
 			for (int i = 0; i < n; i++) {
-				ArrayList<Integer> resultN = (ArrayList<Integer>) result
-						.clone();
-				ArrayList<Integer> candidateN = (ArrayList<Integer>) candidate
-						.clone();
+				ArrayList<Integer> resultN = new ArrayList<Integer>(result);
+				ArrayList<Integer> candidateN = new ArrayList<Integer>(candidate);
 				int temp = candidate.get(i);
 				resultN.add(temp);
 				candidateN.remove(i);

@@ -48,10 +48,8 @@ class PermutationsIISolution {
 					continue;
 				else {
 					pre = candidate.get(i);
-					LinkedList<Integer> candidateN = (LinkedList<Integer>) candidate
-							.clone();
-					ArrayList<Integer> listN = (ArrayList<Integer>) list
-							.clone();
+					LinkedList<Integer> candidateN = new LinkedList<Integer>(candidate);
+					ArrayList<Integer> listN = new ArrayList<Integer>( list);
 					candidateN.remove(i);
 					listN.add(candidate.get(i));
 					buildList(candidateN, listN);

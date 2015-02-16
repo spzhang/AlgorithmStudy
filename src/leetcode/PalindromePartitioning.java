@@ -22,7 +22,7 @@ public class PalindromePartitioning {
 
 }
 
-class Solution {
+class PalindromePartitioningSolution {
 	List<List<String>> result = new ArrayList<List<String>>();
 	List<String> list = new ArrayList<String>();
 
