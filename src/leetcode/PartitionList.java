@@ -11,10 +11,6 @@ package leetcode;
  */
 
 public class PartitionList {
-
-}
-
-class PartitionListSolution {
 	public ListNode partition(ListNode head, int x) {
 		if (head == null)
 			return head;

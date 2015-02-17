@@ -10,11 +10,7 @@ Could you implement it without using extra memory?
  */
 
 public class SingleNumber {
-
-}
-
-class SingleNumberSolution{
-	public int singleNumber(int[] A){
+public int singleNumber(int[] A){
 		
 		int val = 0;
 		for(int i=0; i< A.length; i++){

@@ -14,10 +14,6 @@ package leetcode;
  */
 
 public class CountAndSay {
-
-}
-
-class CountAndSaySolution {
 	public String countAndSay(int n) {
 
 		int count = 1;

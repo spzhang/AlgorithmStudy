@@ -21,10 +21,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Combinations {
-
-}
-
-class CombinationsSolution {
 	public List<List<Integer>> combine(int n, int k) {
 		ArrayList<List<Integer>> result = new ArrayList<List<Integer>>();
 		if (n == 0 || k == 0)
@@ -44,7 +40,7 @@ class CombinationsSolution {
 			return;
 		}
 		for (int i = lower; i <= n; i++) {
-			ArrayList<Integer> curN = (ArrayList<Integer>) cur.clone();
+			ArrayList<Integer> curN = new ArrayList<Integer>(cur);
 			curN.add(i);
 
 			build(result, curN, i + 1, n, k);

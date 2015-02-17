@@ -5,10 +5,6 @@ Given an array where elements are sorted in ascending order, convert it to a hei
  */
 
 public class ConvertSortedArrayToBinarySearchTree {
-
-}
-
-class ConvertSortedArrayToBinarySearchTreeSolution {
     public TreeNode sortedArrayToBST(int[] num) {
         int n = num.length - 1;
         if (n<0) return null;

@@ -12,10 +12,6 @@ package leetcode;
  return [3, 4]. 
  */
 public class SearchForARange {
-
-}
-
-class SearchForARangeSolution {
 	public int[] searchRange(int[] A, int target) {
 		int n = A.length;
 		int[] result = { -1, -1 };

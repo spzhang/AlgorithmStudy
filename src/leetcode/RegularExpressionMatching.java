@@ -21,10 +21,6 @@ package leetcode;
  isMatch("aab", "c*a*b") → true
  */
 public class RegularExpressionMatching {
-
-}
-
-class RegularExpressionMatchingSolution {
 	public boolean isMatch(String s, String p) {
 		if (p.length() == 0) {
 			if (s.length() == 0)

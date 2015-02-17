@@ -8,10 +8,6 @@ package leetcode;
  */
 
 public class BestTimeToBuyAndSellStockII {
-
-}
-
-class BestTimeToBuyAndSellStockIISolution {
 	public int maxProfit(int[] prices) {
 
 		if (prices.length < 2) {
@@ -37,3 +33,4 @@ class BestTimeToBuyAndSellStockIISolution {
 
 	}
 }
+

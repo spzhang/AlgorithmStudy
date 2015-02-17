@@ -21,11 +21,6 @@ import java.util.List;
  */
 
 public class BinaryTreePreorderTraversal {
-
-}
-
-class BinaryTreePreorderTraversalSolution {
-
 	public List<Integer> preorderTraversal(TreeNode root) {
 		List<Integer> list = new ArrayList<Integer>();
 		if (root == null)
@@ -44,4 +39,9 @@ class BinaryTreePreorderTraversalSolution {
 		}
 
 	}
+}
+
+class BinaryTreePreorderTraversalSolution {
+
+
 }

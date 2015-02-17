@@ -27,10 +27,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BinaryTreeLevelOrderTraversal {
-
-}
-
-class BinaryTreeLevelOrderTraversalSolution {
 	public List<List<Integer>> levelOrder(TreeNode root) {
 		ArrayList<List<Integer>> result = new ArrayList<List<Integer>>();
 		if (root == null)
@@ -58,3 +54,4 @@ class BinaryTreeLevelOrderTraversalSolution {
 
 	}
 }
+

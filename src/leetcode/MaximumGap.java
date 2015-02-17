@@ -51,8 +51,8 @@ public class MaximumGap {
 			// update previous bucket value
 			previous = bucketsMAX[i];
 		}
-		maxGap = Math.max(maxGap, max - previous); // updata the final max value
-													// gap
+		maxGap = Math.max(maxGap, max - previous); // updata the final max value gap
+													
 		return maxGap;
 	}
 

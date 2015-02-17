@@ -21,10 +21,6 @@ package leetcode;
 
  */
 public class SymmetricTree {
-
-}
-
-class SymmetricTreeSolution {
 	public boolean isSymmetric(TreeNode root) {
 		// Start typing your Java solution below
 		// DO NOT write main() function

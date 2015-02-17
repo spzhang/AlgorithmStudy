@@ -8,10 +8,6 @@ package leetcode;
 
 public class NQueensII {
 
-}
-
-class NQueensIISolution {
-
 	public static int totalNQueens(int n) {
 		int[] queenList = new int[n];
 		return placeQueen(queenList, 0, n);
@@ -52,5 +48,4 @@ class NQueensIISolution {
 		}
 		return true;
 	}
-
 }

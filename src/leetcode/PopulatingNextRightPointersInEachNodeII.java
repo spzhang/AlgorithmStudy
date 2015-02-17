@@ -30,10 +30,6 @@ package leetcode;
 import java.util.LinkedList;
 
 public class PopulatingNextRightPointersInEachNodeII {
-
-}
-
-class PopulatingNextRightPointersInEachNodeIISolution {
 	public void connect(TreeLinkNode root) {
 		if (root == null)
 			return;

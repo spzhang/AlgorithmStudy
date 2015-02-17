@@ -17,10 +17,6 @@ package leetcode;
  */
 
 public class ExcelSheetColumnNumber {
-
-}
-
-class ExcelSheetColumnNumberSolution {
 	public int titleToNumber(String s) {
 		int n = s.length();
 		int count = 0;

@@ -10,10 +10,6 @@ import java.util.LinkedList;
  path = "/a/./b/../../c/", => "/c"
  */
 public class SimplifyPath {
-
-}
-
-class SimplifyPathSolution {
 	public String simplifyPath(String path) {
 		StringBuffer sb = new StringBuffer();
 		LinkedList<String> stack = new LinkedList<String>();

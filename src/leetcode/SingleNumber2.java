@@ -7,11 +7,7 @@ Your algorithm should have a linear runtime complexity. Could you implement it w
  */
 
 public class SingleNumber2 {
-
-}
-
-class SingleNumber2Solution {
-    public int singleNumber(int[] A) {
+	public int singleNumber(int[] A) {
         int[] count = new int[32];
         int result = 0;
         for (int i=0; i<32; i++){

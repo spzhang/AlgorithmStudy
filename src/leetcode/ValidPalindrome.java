@@ -14,10 +14,6 @@ package leetcode;
  */
 
 public class ValidPalindrome {
-
-}
-
-class ValidPalindromeSolution {
 	public boolean isPalindrome(String s) {
 		if (s == null)
 			return false;

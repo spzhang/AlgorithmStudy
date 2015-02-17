@@ -8,10 +8,6 @@ import java.util.HashMap;
 import java.util.List;
 
 public class CloneGraph {
-
-}
-
-class CloneGraphSolution {
 	HashMap<UndirectedGraphNode, UndirectedGraphNode> map = new HashMap<UndirectedGraphNode, UndirectedGraphNode>();
 
 	public UndirectedGraphNode cloneGraph(UndirectedGraphNode node) {
@@ -36,5 +32,4 @@ class CloneGraphSolution {
 		newNode.neighbors = neighborList;
 		return newNode;
 	}
-
 }

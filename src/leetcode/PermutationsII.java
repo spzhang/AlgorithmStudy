@@ -15,10 +15,6 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class PermutationsII {
-
-}
-
-class PermutationsIISolution {
 	List<List<Integer>> result = new ArrayList<List<Integer>>();
 
 	public List<List<Integer>> permuteUnique(int[] num) {

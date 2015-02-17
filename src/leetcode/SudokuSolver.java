@@ -15,7 +15,7 @@ import java.util.List;
 public class SudokuSolver {
 	public static void main(String[] args) {
 
-		SudokuSolverSolution s = new SudokuSolverSolution();
+		SudokuSolver s = new SudokuSolver();
 		char[][] board = { { '.', '.', '9', '7', '4', '8', '.', '.', '.' },
 				{ '7', '.', '.', '.', '.', '.', '.', '.', '.' },
 				{ '.', '2', '.', '1', '.', '9', '.', '.', '.' },
@@ -34,11 +34,6 @@ public class SudokuSolver {
 		}
 
 	}
-
-}
-
-class SudokuSolverSolution {
-
 	class BlankSpot {
 		int i;
 		int j;

@@ -19,10 +19,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BinaryTreeInorderTraversal {
-
-}
-
-class BinaryTreeInorderTraversalSolution {
 	public List<Integer> inorderTraversal(TreeNode root) {
 
 		List<Integer> list = new ArrayList<Integer>();
@@ -44,5 +40,5 @@ class BinaryTreeInorderTraversalSolution {
 		}
 
 	}
-
 }
+

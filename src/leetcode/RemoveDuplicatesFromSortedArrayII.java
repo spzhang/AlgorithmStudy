@@ -11,10 +11,6 @@ package leetcode;
  */
 
 public class RemoveDuplicatesFromSortedArrayII {
-
-}
-
-class RemoveDuplicatesFromSortedArrayIISolution {
 	public int removeDuplicates(int[] A) {
 		int n = A.length;
 		if (n == 0)

@@ -17,10 +17,6 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Subsets {
-
-}
-
-class SubsetsSolution {
 	private List<Integer> list = new ArrayList<Integer>();
 	private List<List<Integer>> result = new ArrayList<List<Integer>>();
 

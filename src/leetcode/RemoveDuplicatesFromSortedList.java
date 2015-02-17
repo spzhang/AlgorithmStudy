@@ -9,10 +9,6 @@ package leetcode;
  */
 
 public class RemoveDuplicatesFromSortedList {
-
-}
-
-class RemoveDuplicatesFromSortedListSolution {
 	public ListNode deleteDuplicates(ListNode head) {
 		if (null == head)
 			return head;
@@ -31,5 +27,4 @@ class RemoveDuplicatesFromSortedListSolution {
 		}
 		return head;
 	}
-
 }

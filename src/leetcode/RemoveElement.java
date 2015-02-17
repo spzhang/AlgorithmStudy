@@ -7,10 +7,6 @@ The order of elements can be changed. It doesn't matter what you leave beyond th
  */
 
 public class RemoveElement {
-
-}
-
-class RemoveElementSolution {
 	public int removeElement(int[] A, int elem) {
 		int n = A.length;
 		if (n == 0)

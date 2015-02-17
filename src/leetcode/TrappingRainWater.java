@@ -8,10 +8,6 @@ package leetcode;
  */
 
 public class TrappingRainWater {
-
-}
-
-class TrappingRainWaterSolution {
 	public int trap(int[] A) {
 		int n = A.length;
 		if (n == 0)

@@ -12,11 +12,6 @@ package leetcode;
  */
 
 public class Candy {
-
-}
-
-class CandySolution {
-
 	public int candy(int[] ratings) {
 
 		int n = ratings.length;

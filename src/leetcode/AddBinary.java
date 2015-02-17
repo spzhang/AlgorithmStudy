@@ -10,10 +10,6 @@ package leetcode;
  */
 
 public class AddBinary {
-
-}
-
-class AddBinarySolution {
 	public String addBinary(String a, String b) {
 		int n = a.length();
 		int m = b.length();

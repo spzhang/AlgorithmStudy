@@ -12,11 +12,6 @@ import java.util.HashMap;
 import java.util.List;
 
 public class Anagrams {
-
-}
-
-class AnagramsSolution {
-
 	List<String> result = new ArrayList<String>();
 	HashMap<String, String> map = new HashMap<String, String>();
 	HashMap<String, Integer> count = new HashMap<String, Integer>();

@@ -29,10 +29,6 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class BinaryTreeLevelOrderTraversalII {
-
-}
-
-class BinaryTreeLevelOrderTraversalIISolution {
 	public List<List<Integer>> levelOrderBottom(TreeNode root) {
 
 		ArrayList<List<Integer>> result = new ArrayList<List<Integer>>();

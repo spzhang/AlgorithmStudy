@@ -11,10 +11,6 @@ package leetcode;
  */
 
 public class FirstMissingPositive {
-
-}
-
-class FirstMissingPositiveSolution {
 	public int firstMissingPositive(int[] A) {
 		if (A == null || A.length == 0)
 			return 1;

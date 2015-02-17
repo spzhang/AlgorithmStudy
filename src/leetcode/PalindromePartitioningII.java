@@ -10,10 +10,6 @@ package leetcode;
  */
 
 public class PalindromePartitioningII {
-
-}
-
-class PalindromePartitioningIISolution {
 	public int minCut(String s) {
 
 		if (s == null || s.length() < 2)

@@ -23,10 +23,6 @@ package leetcode;
  */
 
 public class UniquePathsII {
-
-}
-
-class UniquePathsIISolution {
 	public int uniquePathsWithObstacles(int[][] obstacleGrid) {
 		int n = obstacleGrid.length;
 		if (n == 0)

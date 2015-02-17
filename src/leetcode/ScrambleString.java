@@ -44,10 +44,6 @@ package leetcode;
 import java.util.Arrays;
 
 public class ScrambleString {
-
-}
-
-class ScrambleStringSolution {
 	public boolean isScramble(String s1, String s2) {
 		if (s1 == null || s2 == null || s1.length() != s2.length())
 			return false;

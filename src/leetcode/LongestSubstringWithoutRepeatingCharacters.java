@@ -5,10 +5,6 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 public class LongestSubstringWithoutRepeatingCharacters {
-
-}
-
-class LongestSubstringWithoutRepeatingCharactersSolution {
 	public int lengthOfLongestSubstring(String s) {
 		HashMap<Character, Integer> map = new HashMap<Character, Integer>();
 		char[] ch = s.toCharArray();
@@ -32,7 +28,7 @@ class LongestSubstringWithoutRepeatingCharactersSolution {
 /*
  * my solution will cause the time out
  */
-class LongestSubstringWithoutRepeatingCharactersSolution2 {
+class LongestSubstringWithoutRepeatingCharacters2 {
 	public int lengthOfLongestSubstring(String s) {
 		if (s == null || s.length() == 0)
 			return 0;

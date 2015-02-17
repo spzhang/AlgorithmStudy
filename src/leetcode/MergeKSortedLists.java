@@ -7,10 +7,6 @@ package leetcode;
 import java.util.List;
 
 public class MergeKSortedLists {
-
-}
-
-class MergeKSortedListsSolution {
 	public ListNode mergeKLists(List<ListNode> lists) {
 		int n = lists.size();
 		if (lists == null || n == 0)

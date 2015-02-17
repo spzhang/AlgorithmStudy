@@ -13,10 +13,6 @@ package leetcode;
  */
 
 public class ValidSudoku {
-
-}
-
-class ValidSudokuSolution {
 	public boolean isValidSudoku(char[][] board) {
 		int n = board.length;
 		if (n != 9)

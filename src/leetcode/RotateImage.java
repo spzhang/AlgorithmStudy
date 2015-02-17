@@ -1,11 +1,7 @@
 package leetcode;
 
 public class RotateImage {
-
-}
-
-class RotateImageSolution {
-    public void rotate(int[][] matrix) {
+	public void rotate(int[][] matrix) {
         int n = matrix.length;
         for(int j = 0; j <= n/2 ; j++){
             for(int k=j; k<n-1-j; k++){

@@ -14,10 +14,6 @@ import java.util.Comparator;
 import java.util.List;
 
 public class MergeIntervals {
-
-}
-
-class MergeIntervalsSolution {
 	List<Interval> result = new ArrayList<Interval>();
 
 	public List<Interval> merge(List<Interval> intervals) {

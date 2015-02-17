@@ -35,38 +35,34 @@ After calling your function, the tree should look like:
  */
 
 public class PopulatingNextRightPointersInEachNode {
-
-}
-
-class PopulatingNextRightPointersInEachNodeSolution {
-    public void connect(TreeLinkNode root) {
-        
-        if(null == root) return;
-        
-        ArrayList<TreeLinkNode> list1 = new ArrayList<TreeLinkNode>();
-        ArrayList<TreeLinkNode> list2 = new ArrayList<TreeLinkNode>();  //to store next row.d
-        
-        list1.add(root);
-        while(list1.size() != 0){
-            ListIterator<TreeLinkNode> i = list1.listIterator();
-            TreeLinkNode current = i.next();
-            while(i.hasNext()){
-                if(null!=current.left){
-                    list2.add(current.left);
-                    list2.add(current.right);
-                }
-                TreeLinkNode node = i.next();
-                current.next = node;
-                current = node;
-            }
-            if(null!=current.left){
-                    list2.add(current.left);
-                    list2.add(current.right);
-            }
-            current.next=null;
-            list1 = list2;
-            list2 = new ArrayList<TreeLinkNode>();
-        }
-        
-    }
+	 public void connect(TreeLinkNode root) {
+	        
+	        if(null == root) return;
+	        
+	        ArrayList<TreeLinkNode> list1 = new ArrayList<TreeLinkNode>();
+	        ArrayList<TreeLinkNode> list2 = new ArrayList<TreeLinkNode>();  //to store next row.d
+	        
+	        list1.add(root);
+	        while(list1.size() != 0){
+	            ListIterator<TreeLinkNode> i = list1.listIterator();
+	            TreeLinkNode current = i.next();
+	            while(i.hasNext()){
+	                if(null!=current.left){
+	                    list2.add(current.left);
+	                    list2.add(current.right);
+	                }
+	                TreeLinkNode node = i.next();
+	                current.next = node;
+	                current = node;
+	            }
+	            if(null!=current.left){
+	                    list2.add(current.left);
+	                    list2.add(current.right);
+	            }
+	            current.next=null;
+	            list1 = list2;
+	            list2 = new ArrayList<TreeLinkNode>();
+	        }
+	        
+	    }
 }

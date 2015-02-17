@@ -7,12 +7,6 @@ package leetcode;
  */
 
 public class SameTree {
-
-}
-
-class SameTreeSolution {
-
-
 	public boolean isSameTree(TreeNode p, TreeNode q) {
 		if (null == p && null == q)
 			return true;
@@ -29,3 +23,4 @@ class SameTreeSolution {
 	}
 
 }
+

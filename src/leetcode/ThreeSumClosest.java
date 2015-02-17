@@ -9,10 +9,6 @@ package leetcode;
  */
 
 public class ThreeSumClosest {
-
-}
-
-class ThreeSumClosestSolution {
 	int[] result = new int[3];
 	int close = 0;
 
@@ -57,5 +53,4 @@ class ThreeSumClosestSolution {
 			subset(num, target, lvl + 1, count);
 		}
 	}
-
 }

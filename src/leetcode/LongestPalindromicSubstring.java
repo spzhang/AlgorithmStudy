@@ -8,10 +8,6 @@ package leetcode;
  */
 
 public class LongestPalindromicSubstring {
-
-}
-
-class LongestPalindromicSubstringSolution {
 	String preProcess(String s) {
 		int n = s.length();
 		if (n == 0)

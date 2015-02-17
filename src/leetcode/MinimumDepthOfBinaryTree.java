@@ -10,10 +10,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MinimumDepthOfBinaryTree {
-
-}
-
-class MinimumDepthOfBinaryTreeSolution {
 	public int minDepth(TreeNode root) {
 		if (root == null)
 			return 0;

@@ -10,10 +10,6 @@ package leetcode;
  */
 
 public class SwapNodesInPairs {
-
-}
-
-class SwapNodesInPairsSolution {
 	public ListNode swapPairs(ListNode head) {
 		if (head == null || head.next == null)
 			return head;

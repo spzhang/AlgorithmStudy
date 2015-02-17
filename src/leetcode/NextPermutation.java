@@ -14,10 +14,6 @@ package leetcode;
  */
 
 public class NextPermutation {
-
-}
-
-class NextPermutationSolution {
 	public void nextPermutation(int[] num) {
 		int n = num.length;
 		if (n == 0 || n == 1)

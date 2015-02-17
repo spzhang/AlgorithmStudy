@@ -11,10 +11,7 @@ return "blue is sky the".
 import java.util.Stack;
 
 public class ReverseWordsInAString {
-
-}
-class ReverseWordsInAStringSolution {
-    public String reverseWords(String s) {
+public String reverseWords(String s) {
         
         Stack<String> stack = new Stack<String>();
         String[] strings = s.split(" +");

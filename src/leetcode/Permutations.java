@@ -12,10 +12,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Permutations {
-
-}
-
-class PermutationsSolution {
 	public List<List<Integer>> permute(int[] num) {
 		int n = num.length;
 		if (n == 0)

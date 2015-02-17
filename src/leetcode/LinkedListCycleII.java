@@ -10,10 +10,6 @@ package leetcode;
 import java.util.HashSet;
 
 public class LinkedListCycleII {
-
-}
-
-class LinkedListCycleIISolution {
 	public ListNode detectCycle(ListNode head) {
 		if (head == null)
 			return head;

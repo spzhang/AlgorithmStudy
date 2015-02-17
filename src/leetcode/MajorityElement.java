@@ -8,10 +8,6 @@ You may assume that the array is non-empty and the majority element always exist
 import java.util.TreeMap;
 
 public class MajorityElement {
-
-}
-
-class MajorityElementSolution {
 	public int majorityElement(int[] num) {
 		int n = num.length;
 		TreeMap<Integer, Integer> map = new TreeMap<Integer, Integer>();

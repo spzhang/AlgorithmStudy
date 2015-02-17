@@ -9,10 +9,6 @@ package leetcode;
  Write a function to determine if a given target is in the array.
  */
 public class SearchInRotatedSortedArrayII {
-
-}
-
-class SearchInRotatedSortedArrayIISolution {
 	public boolean search(int[] A, int target) {
 		int start = 0;
 		int end = A.length - 1;

@@ -25,11 +25,6 @@ import java.util.List;
 import java.util.TreeMap;
 
 public class FourSum {
-
-}
-
-class FourSumSolution {
-
 	List<List<Integer>> result = new ArrayList<List<Integer>>();
 
 	public List<List<Integer>> fourSum(int[] num, int target) {

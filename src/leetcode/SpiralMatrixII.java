@@ -16,10 +16,6 @@ package leetcode;
  */
 
 public class SpiralMatrixII {
-
-}
-
-class SpiralMatrixIISolution {
 	public int[][] generateMatrix(int n) {
 		int[][] matrix = new int[n][n];
 		if (n == 0)

@@ -6,10 +6,6 @@ package leetcode;
  divide and conquer
  */
 public class PowXN {
-
-}
-
-class PowXNSolution {
 	double result = 1;
 
 	public double pow(double x, int n) {

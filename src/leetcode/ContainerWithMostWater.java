@@ -7,11 +7,6 @@ package leetcode;
  */
 
 public class ContainerWithMostWater {
-
-}
-
-class ContainerWithMostWaterSolution {
-
 	public int maxArea(int[] height) {
 		int maxA = 0;
 		int i = 0;

@@ -11,10 +11,6 @@ package leetcode;
  Return 3. 
  */
 public class DistinctSubsequences {
-
-}
-
-class DistinctSubsequencesSolution {
 	public int numDistinct(String S, String T) {
 		int n = S.length();
 		int m = T.length();

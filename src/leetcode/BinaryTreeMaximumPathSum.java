@@ -16,10 +16,6 @@ package leetcode;
  */
 
 public class BinaryTreeMaximumPathSum {
-
-}
-
-class BinaryTreeMaximumPathSumSolution {
 	int maxValue;
 
 	public int maxPathSum(TreeNode root) {

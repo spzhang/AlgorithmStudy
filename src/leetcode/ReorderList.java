@@ -10,10 +10,6 @@ package leetcode;
  Given {1,2,3,4}, reorder it to {1,4,2,3}. 
  */
 public class ReorderList {
-
-}
-
-class ReorderListSolution {
 	public void reorderList(ListNode head) {
 		if (head == null || head.next == null)
 			return;

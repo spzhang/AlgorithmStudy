@@ -10,10 +10,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class CopyListWithRandomPointer {
-
-}
-
-class CopyListWithRandomPointerSolution {
 	public RandomListNode copyRandomList(RandomListNode head) {
 		Map<RandomListNode, RandomListNode> nodeMap = new HashMap<RandomListNode, RandomListNode>();
 		return copyRandomList(head, nodeMap);

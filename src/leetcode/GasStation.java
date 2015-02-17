@@ -13,10 +13,6 @@ package leetcode;
  */
 
 public class GasStation {
-
-}
-
-class GasStationSolution {
 	public int canCompleteCircuit(int[] gas, int[] cost) {
 
 		int previous = 0;

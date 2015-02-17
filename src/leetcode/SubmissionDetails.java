@@ -9,10 +9,6 @@ package leetcode;
  */
 
 public class SubmissionDetails {
-
-}
-
-class SubmissionDetailsSolution {
 	public ListNode rotateRight(ListNode head, int n) {
 		if (head == null)
 			return null;

@@ -20,10 +20,6 @@ import java.util.Arrays;
 import java.util.List;
 
 public class CombinationSum {
-
-}
-
-class CombinationSumSolution {
 	List<List<Integer>> result = new ArrayList<List<Integer>>();
 	List<Integer> list = new ArrayList<Integer>();
 

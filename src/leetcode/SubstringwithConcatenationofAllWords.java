@@ -16,10 +16,6 @@ import java.util.HashMap;
 import java.util.List;
 
 public class SubstringwithConcatenationofAllWords {
-
-}
-
-class SubstringwithConcatenationofAllWordsSolution {
 	List<Integer> ret = new ArrayList<Integer>();
 
 	public List<Integer> findSubstring(String S, String[] L) {

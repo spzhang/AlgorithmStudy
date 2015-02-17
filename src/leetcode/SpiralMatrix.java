@@ -18,10 +18,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SpiralMatrix {
-
-}
-
-class SpiralMatrixSolution {
 	int leftBound, rightBound, upperBound, lowerBound;
 	List<Integer> result = new ArrayList<Integer>();
 

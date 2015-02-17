@@ -17,11 +17,6 @@ import java.util.List;
  */
 
 public class UniqueBinarySearchTreesII {
-
-}
-
-class UniqueBinarySearchTreesIISolution {
-
 	public List<TreeNode> generateTrees(int n) {
 		return helper(1, n);
 	}
@@ -47,5 +42,4 @@ class UniqueBinarySearchTreesIISolution {
 		}
 		return res;
 	}
-
 }

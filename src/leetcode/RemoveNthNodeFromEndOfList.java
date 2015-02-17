@@ -15,10 +15,6 @@ package leetcode;
  */
 
 public class RemoveNthNodeFromEndOfList {
-
-}
-
-class RemoveNthNodeFromEndOfListSolution {
 	public ListNode removeNthFromEnd(ListNode head, int n) {
 		int i = 0;
 		ListNode node = head;

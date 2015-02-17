@@ -10,10 +10,6 @@ package leetcode;
  */
 
 public class SortColors {
-
-}
-
-class SortColorsSolution {
 	public void sortColors(int[] A) {
 		int n = A.length;
 		int i = 0, j = 0, k = 0;

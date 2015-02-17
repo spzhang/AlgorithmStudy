@@ -7,10 +7,6 @@ package leetcode;
  */
 
 public class Sqrtx {
-
-}
-
-class SqrtxSolution {
 	int sqrt(int x) {
 		if (x == 0 || x == 1) {
 			return x;
@@ -29,5 +25,4 @@ class SqrtxSolution {
 		}
 		return res;
 	}
-
 }

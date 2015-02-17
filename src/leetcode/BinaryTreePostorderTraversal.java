@@ -22,10 +22,6 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class BinaryTreePostorderTraversal {
-
-}
-
-class BinaryTreePostorderTraversalSolution {
 	public List<Integer> postorderTraversal(TreeNode root) {
 
 		LinkedList<TreeNode> temp = new LinkedList<TreeNode>();

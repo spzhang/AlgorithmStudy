@@ -8,10 +8,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ConvertSortedListToBinarySearchTree {
-
-}
-
-class ConvertSortedListToBinarySearchTreeSolution {
 	public TreeNode sortedListToBST(ListNode head) {
 		if (head == null)
 			return null;

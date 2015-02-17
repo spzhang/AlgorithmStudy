@@ -22,10 +22,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PathSumII {
-
-}
-
-class PathSumIISolution {
 	List<List<Integer>> result = new ArrayList<List<Integer>>();
 
 	public List<List<Integer>> pathSum(TreeNode root, int sum) {
@@ -38,8 +34,7 @@ class PathSumIISolution {
 	}
 
 	void subsets(TreeNode node, List<Integer> list, int cursum, int sum) {
-		List<Integer> listN = (List<Integer>) ((ArrayList<Integer>) list)
-				.clone();
+		List<Integer> listN = new ArrayList<Integer>(list);
 		listN.add(node.val);
 		cursum += node.val;
 		if (node.left == null && node.right == null) {

@@ -10,10 +10,6 @@ package leetcode;
  */
 
 public class BestTimeToBuyAndSellStockIII {
-
-}
-
-class BestTimeToBuyAndSellStockIIISolution {
 	public int maxProfit(int[] prices) {
 		if (prices.length < 2)
 			return 0;// one of zero days, cannot sell
@@ -67,5 +63,4 @@ class BestTimeToBuyAndSellStockIIISolution {
 		return best;
 
 	}
-
 }

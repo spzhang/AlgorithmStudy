@@ -13,10 +13,6 @@ package leetcode;
  */
 
 public class LengthOfLastWord {
-
-}
-
-class LengthOfLastWordSolution {
 	public int lengthOfLastWord(String s) {
 		char[] chars = s.toCharArray();
 		int count = 0;

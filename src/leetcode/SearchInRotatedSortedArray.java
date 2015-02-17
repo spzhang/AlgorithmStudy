@@ -11,10 +11,6 @@ package leetcode;
  */
 
 public class SearchInRotatedSortedArray {
-
-}
-
-class SearchInRotatedSortedArraySolution {
 	public int search(int[] A, int target) {
 		int n = A.length;
 		if (n <= 0)

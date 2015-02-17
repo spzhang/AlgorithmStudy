@@ -6,10 +6,6 @@ import java.util.HashSet;
 import java.util.List;
 
 public class RepeatedDNASequences {
-
-}
-
-class RepeatedDNASequencesSolution {
 	public List<String> findRepeatedDnaSequences(String s) {
 		List<String> res = new ArrayList<String>();
 		if (s == null || s.length() < 11)

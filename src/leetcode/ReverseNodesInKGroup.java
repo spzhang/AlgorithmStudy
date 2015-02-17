@@ -18,10 +18,6 @@ package leetcode;
  */
 
 public class ReverseNodesInKGroup {
-
-}
-
-class ReverseNodesInKGroupSolution {
 	public ListNode reverseKGroup(ListNode head, int k) {
 		ListNode dummy = new ListNode(0);
 		dummy.next = head;

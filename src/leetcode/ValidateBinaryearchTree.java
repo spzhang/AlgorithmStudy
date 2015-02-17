@@ -12,10 +12,6 @@ package leetcode;
  */
 
 public class ValidateBinaryearchTree {
-
-}
-
-class ValidateBinaryearchTreeSolution {
 	public boolean isValidBST(TreeNode root) {
 		if (root == null)
 			return true;
@@ -49,5 +45,4 @@ class ValidateBinaryearchTreeSolution {
 
 		return leftCheck & rightCheck;
 	}
-
 }

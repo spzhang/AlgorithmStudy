@@ -19,10 +19,6 @@ package leetcode;
  */
 
 public class PermutationSequence {
-
-}
-
-class PermutationSequenceSolution {
 	public String getPermutation(int n, int k) {
 		int total = factorial(n);
 		StringBuffer candidate = new StringBuffer("123456789");

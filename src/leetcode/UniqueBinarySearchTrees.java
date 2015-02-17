@@ -8,9 +8,6 @@ package leetcode;
  */
 
 public class UniqueBinarySearchTrees {
-}
-
-class UniqueBinarySearchTreesSolution {
 	public int numTrees(int n) {
 
 		if (n == 0)
@@ -27,5 +24,4 @@ class UniqueBinarySearchTreesSolution {
 		return sum;
 
 	}
-
-};
+}

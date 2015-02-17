@@ -8,10 +8,6 @@ package leetcode;
  How many possible unique paths are there?
  */
 public class UniquePaths {
-
-}
-
-class UniquePathsSolution {
 	public int uniquePaths(int m, int n) {
 		if (n < 1 || m < 1)
 			return 0;

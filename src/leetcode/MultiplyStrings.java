@@ -7,10 +7,6 @@ package leetcode;
  */
 
 public class MultiplyStrings {
-
-}
-
-class MultiplyStringsSolution {
 	public String multiply(String num1, String num2) {
 		int n = num1.length();
 		int m = num2.length();

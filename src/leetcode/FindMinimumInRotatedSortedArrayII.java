@@ -16,10 +16,6 @@ package leetcode;
  */
 
 public class FindMinimumInRotatedSortedArrayII {
-
-}
-
-class FindMinimumInRotatedSortedArrayIISolution {
 	public int findMin(int[] num) {
 		int n = num.length;
 		if (n == 0)

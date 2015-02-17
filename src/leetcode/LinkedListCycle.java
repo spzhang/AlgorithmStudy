@@ -7,13 +7,6 @@ package leetcode;
  Can you solve it without using extra space? 
  */
 public class LinkedListCycle {
-
-}
-
-class LinkedListCycleSolution {
-
-
-
 	public boolean hasCycle(ListNode head) {
 
 		if (head == null)

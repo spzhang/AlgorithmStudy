@@ -24,10 +24,6 @@ import java.util.List;
  */
 
 public class GreyCode {
-
-}
-
-class GreyCodeSolution {
 	public List<Integer> grayCode(int n) {
 		List<Integer> list = new ArrayList<Integer>();
 		list.add(0);

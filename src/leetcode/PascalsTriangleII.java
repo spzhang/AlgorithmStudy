@@ -13,10 +13,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PascalsTriangleII {
-
-}
-
-class PascalsTriangleIISolution {
 	public List<Integer> getRow(int rowIndex) {
 		ArrayList<Integer> result = new ArrayList<Integer>();
 		result.add(1);

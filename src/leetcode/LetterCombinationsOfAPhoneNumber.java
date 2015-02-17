@@ -16,10 +16,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LetterCombinationsOfAPhoneNumber {
-
-}
-
-class LetterCombinationsOfAPhoneNumberSolution {
 	List<String> result = new ArrayList<String>();
 	List<List<Character>> digitals = new ArrayList<List<Character>>();
 	StringBuilder sb = new StringBuilder();
@@ -111,5 +107,4 @@ class LetterCombinationsOfAPhoneNumberSolution {
 		list9.add('z');
 		digitals.add(9, list9);
 	}
-
 }

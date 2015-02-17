@@ -17,10 +17,6 @@ package leetcode;
  */
 
 public class ZigZagConversion {
-
-}
-
-class ZigZagConversionSolution {
 	public String convert(String s, int nRows) {
 		if (nRows <= 0 || s == null || s.length() == 0)
 			return "";

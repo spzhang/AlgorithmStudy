@@ -24,10 +24,6 @@ import java.util.Arrays;
 import java.util.List;
 
 public class CombinationSumII {
-
-}
-
-class CombinationSumIISolution {
 	List<List<Integer>> result = new ArrayList<List<Integer>>();
 	List<Integer> list = new ArrayList<Integer>();
 

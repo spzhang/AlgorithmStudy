@@ -12,10 +12,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GenerateParentheses {
-
-}
-
-class GenerateParenthesesSolution {
 	public List<String> generateParenthesis(int n) {
 
 		char[] result = new char[2 * n];

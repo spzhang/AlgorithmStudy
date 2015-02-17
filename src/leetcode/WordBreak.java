@@ -15,11 +15,6 @@ import java.util.List;
 import java.util.Set;
 
 public class WordBreak {
-
-}
-
-class WordBreakSolution {
-
 	public boolean wordBreak(String s, Set<String> dict) {
 		if (s == null || s.length() == 0)
 			return false;
@@ -39,5 +34,4 @@ class WordBreakSolution {
 		}
 		return (starts.get(0) == s.length());
 	}
-
 }

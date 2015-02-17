@@ -15,11 +15,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class NQueens {
-
-}
-
-class NQueensSolution {
-
 	List<String[]> results = new ArrayList<String[]>();
 	int[] result;
 

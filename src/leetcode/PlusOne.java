@@ -7,10 +7,6 @@ package leetcode;
  */
 
 public class PlusOne {
-
-}
-
-class PlusOneSolution {
 	public int[] plusOne(int[] digits) {
 		int n = digits.length;
 		return plusOneAux(digits, n - 1);

@@ -30,11 +30,6 @@ package leetcode;
 import java.util.Stack;
 
 public class FlattenBinaryTreeToLinkedList {
-
-}
-
-class FlattenBinaryTreeToLinkedListSolution {
-
 	public void flatten(TreeNode root) {
 		Stack<TreeNode> stack = new Stack<TreeNode>();
 		TreeNode p = root;
@@ -56,5 +51,4 @@ class FlattenBinaryTreeToLinkedListSolution {
 			p = p.right;
 		}
 	}
-
 }

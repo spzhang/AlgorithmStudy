@@ -5,10 +5,6 @@ package leetcode;
  */
 
 public class LongestCommonPrefix {
-
-}
-
-class LongestCommonPrefixSolution {
 	public String longestCommonPrefix(String[] strs) {
 		if (strs == null)
 			return "";

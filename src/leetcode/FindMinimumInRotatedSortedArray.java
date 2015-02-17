@@ -10,10 +10,6 @@ package leetcode;
  You may assume no duplicate exists in the array.
  */
 public class FindMinimumInRotatedSortedArray {
-
-}
-
-class FindMinimumInRotatedSortedArraySolution {
 	public int findMin(int[] num) {
 		int n = num.length;
 		if (n == 0)
@@ -42,3 +38,4 @@ class FindMinimumInRotatedSortedArraySolution {
 
 	}
 }
+

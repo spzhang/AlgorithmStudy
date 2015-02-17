@@ -10,10 +10,6 @@ package leetcode;
 import java.util.Stack;
 
 public class MaximalRectangle {
-
-}
-
-class MaximalRectangleSolution {
 	public int maximalRectangle(char[][] matrix) {
 		if (matrix == null)
 			return 0;

@@ -19,10 +19,6 @@ package leetcode;
 import java.util.Stack;
 
 public class LargestRectangleInHitogram {
-}
-
-class LargestRectangleIsnHistogramSolution {
-
 	public int largestRectangleArea(int[] height) {
 		if (height == null)
 			return 0;// Should throw exception

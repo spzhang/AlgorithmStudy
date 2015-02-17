@@ -13,10 +13,6 @@ package leetcode;
  */
 
 public class FindPeakElement {
-
-}
-
-class FindPeakElementSolution {
 	public int findPeakElement(int[] num) {
 		int n = num.length;
 		if (n == 0)

@@ -17,11 +17,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class InsertInterval {
-
-}
-
-class InsertIntervalSolution {
-
 	List<Interval> result = new ArrayList<Interval>();
 
 	public List<Interval> insert(List<Interval> intervals, Interval newInterval) {
@@ -57,5 +52,5 @@ class InsertIntervalSolution {
 		return result;
 
 	}
-
 }
+

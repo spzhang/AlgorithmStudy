@@ -20,10 +20,6 @@ package leetcode;
  */
 
 public class SearchA2DMatrix {
-
-}
-
-class SearchA2DMatrixSolution {
 	public boolean searchMatrix(int[][] matrix, int target) {
 		int rows = matrix.length;
 		if (rows == 0)

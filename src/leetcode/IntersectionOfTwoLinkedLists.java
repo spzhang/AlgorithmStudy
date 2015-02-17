@@ -23,10 +23,6 @@ package leetcode;
  */
 
 public class IntersectionOfTwoLinkedLists {
-
-}
-
-class IntersectionOfTwoLinkedListsSolution {
 	public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
 		int n = 0;
 		ListNode a = headA;

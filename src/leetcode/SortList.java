@@ -4,10 +4,6 @@ package leetcode;
  Sort a linked list in O(n log n) time using constant space complexity.
  */
 public class SortList {
-
-}
-
-class SortListSolution {
 	public ListNode sortList(ListNode head) {
 		if (head == null || head.next == null)
 			return head;

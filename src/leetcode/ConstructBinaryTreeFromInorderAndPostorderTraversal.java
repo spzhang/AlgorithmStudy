@@ -8,10 +8,6 @@ package leetcode;
  */
 
 public class ConstructBinaryTreeFromInorderAndPostorderTraversal {
-
-}
-
-class ConstructBinaryTreeFromInorderAndPostorderTraversalSolution {
 	public TreeNode buildTree(int[] inorder, int[] postorder) {
 		if (inorder == null || postorder == null || inorder.length == 0)
 			return null;

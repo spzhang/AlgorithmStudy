@@ -4,10 +4,6 @@ package leetcode;
  Sort a linked list using insertion sort.
  */
 public class InsertionSortList {
-
-}
-
-class InsertionSortListSolution {
 	public ListNode insertionSortList(ListNode head) {
 		if (head == null)
 			return null;

@@ -20,11 +20,7 @@ package leetcode;
  */
 
 public class WordSearch {
-
-}
-
-class WordSearchSolution {
-
+	
 	boolean FOUND = false;
 
 	public boolean exist(char[][] board, String word) {
@@ -90,5 +86,6 @@ class WordSearchSolution {
 			}
 		}
 	}
+
 
 }

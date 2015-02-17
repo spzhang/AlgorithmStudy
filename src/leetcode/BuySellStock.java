@@ -11,15 +11,6 @@ package leetcode;
  */
 public class BuySellStock {
 
-	public static void main(String[] args) {
-
-		int[] test = { 1, 2 };
-		System.out.println(new BuySellStockSolution().maxProfit(test));
-	}
-
-}
-
-class BuySellStockSolution {
 	public int maxProfit(int[] prices) {
 
 		if (prices.length < 2) {
@@ -44,4 +35,5 @@ class BuySellStockSolution {
 		return sum;
 
 	}
+
 }

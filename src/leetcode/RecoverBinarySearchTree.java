@@ -9,10 +9,6 @@ package leetcode;
  */
 
 public class RecoverBinarySearchTree {
-
-}
-
-class RecoverBinarySearchTreeSolution {
 	TreeNode firstElement = null;
 	TreeNode secondElement = null;
 	TreeNode prevElement = new TreeNode(Integer.MIN_VALUE);

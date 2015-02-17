@@ -14,10 +14,6 @@ package leetcode;
  */
 
 public class JumpGame {
-
-}
-
-class JumpGameSolution {
 	public boolean canJump(int[] A) {
 		int n = A.length;
 		if (n == 0)

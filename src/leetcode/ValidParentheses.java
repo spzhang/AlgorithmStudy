@@ -8,10 +8,6 @@ package leetcode;
 import java.util.Stack;
 
 public class ValidParentheses {
-
-}
-
-class ValidParenthesesSolution {
 	public boolean isValid(String s) {
 
 		Stack<Character> stack = new Stack<Character>();

@@ -19,10 +19,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PascalsTriangle {
-
-}
-
-class PascalsTriangleSolution {
 	public List<List<Integer>> generate(int numRows) {
 		List<List<Integer>> results = new ArrayList<List<Integer>>();
 		if (numRows == 0)

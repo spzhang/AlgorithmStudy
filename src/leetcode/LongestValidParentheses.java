@@ -10,10 +10,7 @@ Another example is ")()())", where the longest valid parentheses substring is "(
 import java.util.Stack;
 
 public class LongestValidParentheses {
-}
-
-class LongestValidParenthesesSolution {
-    Stack<Integer> lefts = new Stack<Integer>();
+	Stack<Integer> lefts = new Stack<Integer>();
 
     public int longestValidParentheses(String s) {
         if (s == null || s.length() < 2) return 0;

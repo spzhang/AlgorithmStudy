@@ -12,10 +12,6 @@ package leetcode;
 import java.util.Arrays;
 
 public class LongestConsecutiveSequence {
-
-}
-
-class LongestConsecutiveSequenceSolution {
 	public int longestConsecutive(int[] num) {
 		int n = num.length;
 		if (n == 0)

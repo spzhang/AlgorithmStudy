@@ -13,10 +13,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RestoreIPAddresses {
-
-}
-
-class RestoreIPAddressesSolution {
 	List<String> result = new ArrayList<String>();
 	List<String> temp = new ArrayList<String>();
 

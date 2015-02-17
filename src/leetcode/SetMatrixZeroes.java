@@ -14,10 +14,6 @@ package leetcode;
  */
 
 public class SetMatrixZeroes {
-
-}
-
-class SetMatrixZeroesSolution {
 	public void setZeroes(int[][] matrix) {
 		int n = matrix.length;
 		if (n == 0)
