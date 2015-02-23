@@ -1,7 +1,9 @@
 package leetcode;
 
 /*
- Given a string s and a dictionary of words dict, determine if s can be segmented into a space-separated sequence of one or more dictionary words.
+ Given a string s and a dictionary of words dict,
+ determine if s can be segmented into a space-separated sequence of
+ one or more dictionary words.
 
  For example, given
  s = "leetcode",
@@ -20,8 +22,8 @@ public class WordBreak {
 			return false;
 		else if (dict.contains(s))
 			return true;
-		
-		//the first letter that dict cannot build.
+
+		// the first letter that dict cannot build.
 		List<Integer> starts = new LinkedList<Integer>();
 		starts.add(0);
 		for (int end = 1; end <= s.length(); end++) {
