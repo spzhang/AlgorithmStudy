@@ -40,8 +40,3 @@ public class BinaryTreePreorderTraversal {
 
 	}
 }
-
-class BinaryTreePreorderTraversalSolution {
-
-
-}

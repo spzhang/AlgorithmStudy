@@ -17,32 +17,23 @@ public class BestTimeToBuyAndSellStockIII {
 		// decide to buy and sell one stock on or before day i
 		// and the other stock after day i
 
-		int[] left = new int[prices.length];// store the max profit so far for
-											// day [0,i] for i from 0 to n
-		int[] right = new int[prices.length];// store the max profit so far for
-												// the days [i,n] for i from 0
-												// to n
+		int[] left = new int[prices.length];// store the max profit so far for day [0,i] for i from 0 to n
+		int[] right = new int[prices.length];// store the max profit so far for the days [i,n] for i from 0 to n
 		int minl, maxprofit, maxr, profit;
 
 		maxprofit = 0;// lower bound on profit
-		minl = Integer.MAX_VALUE;// minimum price so far for populating left
-									// array
+		minl = Integer.MAX_VALUE;// minimum price so far for populating left array
 		for (int i = 0; i < left.length; i++) {
 			if (prices[i] < minl)
-				minl = prices[i];// check if this price is the minimum price so
-									// far
-			profit = prices[i] - minl;// get the profit of selling at current
-										// price having bought at min price so
-										// far
+				minl = prices[i];// check if this price is the minimum price so far
+			profit = prices[i] - minl;// get the profit of selling at current price having bought at min price so far
 			if (profit > maxprofit)
-				maxprofit = profit;// if the profit is greater than the profit
-									// so far, update the max profit
+				maxprofit = profit;// if the profit is greater than the profit so far, update the max profit
 			left[i] = maxprofit;
 		}
 
 		maxprofit = 0;// reset maxprofit to its lower bound
-		maxr = Integer.MIN_VALUE;// maximum price so far for populating the
-									// right array
+		maxr = Integer.MIN_VALUE;// maximum price so far for populating the right array
 		// same line of reasoning as the above
 		for (int i = left.length - 1; i >= 0; i--) {
 			if (prices[i] > maxr)
