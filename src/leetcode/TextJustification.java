@@ -31,34 +31,54 @@ import java.util.List;
 
 public class TextJustification {
 
-    public List<String> fullJustify(String[] words, int L) {
+	public List<String> fullJustify(String[] words, int L) {
+		List<String> currList = new ArrayList<String>();
+		List<String> res = new ArrayList<String>();
+		int counts = 0, len = 0;
+		StringBuilder sb = new StringBuilder();
 
-        List<String> ret = new ArrayList<String>();
+		while (counts < words.length) {
+			// 1 put the first word into the line
+			sb.setLength(0);
+			sb.append(words[counts]);
+			currList.clear();
+			len = words[counts].length();
+			counts++;
 
-        int n = words.length;
+			// 2. Handle the rest of the words for each line
+			while (counts < words.length
+					&& len + 1 + words[counts].length() <= L) {
+				currList.add(" " + words[counts]);
+				len += words[counts].length() + 1;
+				counts++;
+			}
 
-        if (words == null || n == 0) return ret;
+			// 3. Calculate the number of spaces we need and insert into the
+			// currList
+			if (counts < words.length && currList.size() > 0) {
+				int numSpaces = L - len;
+				int avg = numSpaces / currList.size();
+				int rem = numSpaces % currList.size();
+				for (int i = 0; i < currList.size(); i++) {
+					appendSpace(sb, i < rem ? avg + 1 : avg);
+					sb.append(currList.get(i));
+				}
+			} else {
+				// 4. Special case for the last line
+				for (int j = 0; j < currList.size(); j++) {
+					sb.append(currList.get(j));
+				}
+				appendSpace(sb, L - len);
+			}
+			res.add(sb.toString());
+		}
+		return res;
+	}
 
-        int i = 0, len;
-        ArrayList<String> temp = new ArrayList<String>();
-        while (i < n - 1) {
-            len = 0;
-            temp.clear();
-            while (i < n - 1 && len + words[i].length() <= L) {
-                len += words[i].length();
-                temp.add(words[i]);
-                i++;
-            }
-            if (i != n - 2) {
-
-            } else {
-
-            }
-        }
-
-
-        return ret;
-
-    }
+	private void appendSpace(StringBuilder sb, int n) {
+		for (int i = 0; i < n; i++) {
+			sb.append(" ");
+		}
+	}
 
 }
