@@ -55,7 +55,7 @@ public class WordLadder {
 			String word = queue.poll();
 			int len = length.poll();
 
-			if (match(word, end)) {
+			if (word.equals(end)) {
 				return len;
 			}
 
@@ -77,12 +77,5 @@ public class WordLadder {
 		}
 
 		return 0;
-	}
-
-	boolean match(String word, String end) {
-		if (word.equals(end)) {
-			return true;
-		}
-		return false;
 	}
 }

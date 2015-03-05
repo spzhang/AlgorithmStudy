@@ -1,7 +1,8 @@
 package leetcode;
 
 /*
- Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
+ Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0?
+ Find all unique triplets in the array which gives the sum of zero.
 
  Note:
 
@@ -18,8 +19,6 @@ package leetcode;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
 
 public class ThreeSum {
@@ -31,14 +30,15 @@ public class ThreeSum {
 
 	public List<List<Integer>> threeSum(int[] num) {
 		List<List<Integer>> ret = new ArrayList<List<Integer>>();
-		if(num.length < 3) return ret;
-		
+		if (num.length < 3)
+			return ret;
+
 		Arrays.sort(num);
-		for(int i = 0 ; i < num.length-2 ; i++){
-			if(i==0||num[i] > num[i-1]){		// avoid duplicated
-				int j = i+1, k = num.length-1;
-				while(j<k){
-					if(num[j] + num[k] == -num[i]){
+		for (int i = 0; i < num.length - 2; i++) {
+			if (i == 0 || num[i] > num[i - 1]) { // avoid duplicated
+				int j = i + 1, k = num.length - 1;
+				while (j < k) {
+					if (num[j] + num[k] == -num[i]) {
 						ArrayList<Integer> temp = new ArrayList<Integer>();
 						temp.add(num[i]);
 						temp.add(num[j]);
@@ -46,19 +46,20 @@ public class ThreeSum {
 						ret.add(temp);
 						j++;
 						k--;
-						while(k>j && num[k]==num[k+1]) k--;//avoid duplicate solutions 
-                        while(j<k && num[j]==num[j-1]) j++;//avoid duplicate solutions
-					}else if (num[j] + num[k] > -num[i]){
+						while (k > j && num[k] == num[k + 1])
+							k--;// avoid duplicate solutions
+						while (j < k && num[j] == num[j - 1])
+							j++;// avoid duplicate solutions
+					} else if (num[j] + num[k] > -num[i]) {
 						k--;
-					}else{
+					} else {
 						j++;
 					}
 				}
-				
+
 			}
 		}
-		
-		
+
 		return ret;
 	}
 }
