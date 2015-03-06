@@ -2,9 +2,9 @@ package algorithm;
 
 import java.util.Arrays;
 
-public class COUNTING_SORT {
+public class CountingSort {
 
-	public static void COUNTING_SORT_IMP(int[] a, int[] b, int[] c, int k) {
+	public static void countingSort(int[] a, int[] b, int[] c, int k) {
 
 		for (int i = 0; i <= k; i++) {
 			c[i] = 0;
@@ -30,7 +30,7 @@ public class COUNTING_SORT {
 		int[] b = new int[8];
 		int[] c = new int[6];
 
-		COUNTING_SORT_IMP(a, b, c, 5);
+		countingSort(a, b, c, 5);
 		System.out.println(Arrays.toString(b));
 	}
 }
