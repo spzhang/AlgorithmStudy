@@ -10,8 +10,8 @@ public class QuickSort {
 			return num;
 
 		int pivot = num.get(0);
-		List<Integer> lower = new ArrayList<>();
-		List<Integer> higher = new ArrayList<>();
+		List<Integer> lower = new ArrayList<Integer>();
+		List<Integer> higher = new ArrayList<Integer>();
 
 		for (int i = 1; i < num.size(); i++) {
 			if (num.get(i) < pivot) {

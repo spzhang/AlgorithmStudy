@@ -23,7 +23,7 @@ public class MergeSort {
 		int leftI = 0;
 		int rightI = 0;
 
-		List<Integer> merged = new ArrayList<>(left.size() + right.size());
+		List<Integer> merged = new ArrayList<Integer>(left.size() + right.size());
 
 		while (leftI < left.size() && rightI < right.size()) {
 			if (left.get(leftI) < right.get(rightI)) {
