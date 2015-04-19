@@ -41,3 +41,8 @@ public class Anagrams {
 		return new String(chas);
 	}
 }
+
+/*
+ *  anagram is string with same characters,
+ *  idea is sort the string, put on hashmap.
+ */

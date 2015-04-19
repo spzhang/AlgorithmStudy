@@ -24,7 +24,7 @@ public class AddBinary {
 
 		while (n != 0 && m != 0) {
 			int i = Integer.valueOf(a.charAt(n - 1))
-					+ Integer.valueOf(b.charAt(m - 1)) + carry - 48 * 2;
+					+ Integer.valueOf(b.charAt(m - 1)) + carry - '0' * 2;
 			if (i == 0) {
 				sb.append(0);
 				carry = 0;

@@ -22,33 +22,33 @@ public class ZigZagConversion {
 			return "";
 		if (nRows == 1)
 			return s;
-		char[][] rslt = new char[nRows][s.length()];
+		char[][] ret = new char[nRows][s.length()];
 
 		boolean downflag = true;
-		int r = 0;
-		int c = 0;
-		int i = 0;
+		int r = 0;	//row
+		int c = 0;	//column
+		int i = 0;	//index
 
 		while (i < s.length()) {
 			char curChar = s.charAt(i);
 			if (downflag == false) {
 				if (r == 0) {
-					rslt[r][c] = curChar;
+					ret[r][c] = curChar;
 					downflag = true;
 					r++;
 				} else {
-					rslt[r][c] = curChar;
+					ret[r][c] = curChar;
 					c++;
 					r--;
 				}
 			} else {
 				if (r == nRows - 1) {
-					rslt[r][c] = curChar;
+					ret[r][c] = curChar;
 					downflag = false;
 					c++;
 					r--;
 				} else {
-					rslt[r][c] = curChar;
+					ret[r][c] = curChar;
 					r++;
 				}
 			}
@@ -57,7 +57,7 @@ public class ZigZagConversion {
 
 		StringBuilder sb = new StringBuilder();
 		for (int j = 0; j < nRows; j++) {
-			sb.append(getString(rslt[j]));
+			sb.append(getString(ret[j]));
 		}
 		return sb.toString();
 	}
@@ -71,3 +71,7 @@ public class ZigZagConversion {
 		return sb.toString();
 	}
 }
+
+/*
+ * 创建zig字符串对应的2纬数组 ，然后重新读出字符串
+ */

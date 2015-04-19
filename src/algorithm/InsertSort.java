@@ -28,7 +28,7 @@ public class InsertSort {
 	}
 
 	@Test
-	public void bubbleSortTest() {
+	public void insertSortTest() {
 
 		List<Integer> input = new ArrayList<Integer>();
 		input.addAll(Arrays.asList(4, 2, 1, 3));

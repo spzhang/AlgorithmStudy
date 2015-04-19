@@ -1,30 +1,34 @@
 package leetcode;
 
 /*
- (Manacher’s Algorithm)
+
  Given a string S, find the longest palindromic substring in S.
  You may assume that the maximum length of S is 1000,
  and there exists one unique longest palindromic substring.
+ 
  */
 
 public class LongestPalindromicSubstring {
+	
 	String preProcess(String s) {
+		//convert abc to ^#a#b#c#$
 		int n = s.length();
 		if (n == 0)
 			return "^$";
-		String ret = "^";
+		StringBuilder ret = new StringBuilder();
+		ret.append("^");
 		for (int i = 0; i < n; i++)
-			ret += "#" + s.substring(i, i + 1);
+			ret.append( "#").append(s.substring(i, i + 1));
 
-		ret += "#$";
-		return ret;
+		ret.append("#$");
+		return ret.toString();
 	}
 
 	String longestPalindrome(String s) {
 		String t = preProcess(s);
 		int n = t.length();
 		int[] P = new int[n];
-		int C = 0, R = 0;
+		int C = 0, R = 0;		//center and righter
 		for (int i = 1; i < n - 1; i++) {
 			int i_mirror = 2 * C - i; // equals to i' = C - (i-C)
 			P[i] = (R > i) ? Math.min(R - i, P[i_mirror]) : 0;
@@ -55,3 +59,8 @@ public class LongestPalindromicSubstring {
 				(centerIndex - 1 - maxLen) / 2 + maxLen);
 	}
 }
+
+/*
+ *  (Manacher’s Algorithm)
+ *  see evernote part II
+ */
