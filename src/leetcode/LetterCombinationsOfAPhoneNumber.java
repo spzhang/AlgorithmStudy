@@ -16,26 +16,27 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LetterCombinationsOfAPhoneNumber {
-	List<String> result = new ArrayList<String>();
+	List<String> ret = new ArrayList<String>();
 	List<List<Character>> digitals = new ArrayList<List<Character>>();
 	StringBuilder sb = new StringBuilder();
 
 	public List<String> letterCombinations(String digits) {
-		if (digits == null)
-			return result;
+		if (digits == null || digits.length() == 0)
+			return ret;
 		makeDigitals();
 		build(digits, 0);
-		return result;
+		return ret;
 	}
 
+	// backtracking
 	void build(String digits, int lvl) {
 		if (lvl == digits.length()) {
 			String s = sb.toString();
-			result.add(s);
+			ret.add(s);
 			return;
 		} else {
 			char c = digits.charAt(lvl);
-			int i = Integer.valueOf(c) - 48;
+			int i = Integer.valueOf(c) - '0';
 			if (i == 0 || (i <= 9 && i >= 2)) {
 				List<Character> list = digitals.get(i);
 				for (Character c1 : list) {

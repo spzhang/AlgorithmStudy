@@ -2,7 +2,8 @@ package leetcode;
 
 /*
  (k sum questions, look at evernote!)
- Given an array S of n integers, are there elements a, b, c, and d in S such that a + b + c + d = target? Find all unique quadruplets in the array which gives the sum of target.
+ Given an array S of n integers, are there elements a, b, c, and d in S such that a + b + c + d = target? 
+ Find all unique quadruplets in the array which gives the sum of target.
 
  Note:
 
@@ -25,7 +26,7 @@ import java.util.List;
 import java.util.TreeMap;
 
 public class FourSum {
-	List<List<Integer>> result = new ArrayList<List<Integer>>();
+	List<List<Integer>> ret = new ArrayList<List<Integer>>();
 
 	public List<List<Integer>> fourSum(int[] num, int target) {
 		class Pair {
@@ -43,7 +44,7 @@ public class FourSum {
 		}
 
 		if (num == null || num.length < 4)
-			return result;
+			return ret;
 		Arrays.sort(num);
 		TreeMap<Integer, List<Pair>> map = new TreeMap<Integer, List<Pair>>();
 		for (int i = 0; i < num.length; i++) {
@@ -71,8 +72,8 @@ public class FourSum {
 						if (jpairs.ai > ipairs.bi || ipairs.ai > jpairs.bi) {
 							List<Integer> newList = Arrays.asList(ipairs.a,
 									ipairs.b, jpairs.a, jpairs.b);
-							if (!result.contains(newList))
-								result.add(newList);
+							if (!ret.contains(newList))
+								ret.add(newList);
 						}
 					}
 				}
@@ -94,14 +95,19 @@ public class FourSum {
 						if (jpairs.ai > ipairs.bi) {
 							List<Integer> newList = Arrays.asList(ipairs.a,
 									ipairs.b, jpairs.a, jpairs.b);
-							if (!result.contains(newList))
-								result.add(newList);
+							if (!ret.contains(newList))
+								ret.add(newList);
 						}
 					}
 				}
 			}
 		}
 
-		return result;
+		return ret;
 	}
 }
+
+/*
+ * 从数列中 取两个数做组合， 以他们的和作为key， indeices作为value 加入有序的TreeMap中，
+ * 用收尾两个指针 夹出来所以的组合， 只筛选出没正确的排序的组合 
+ */

@@ -1,7 +1,10 @@
 package leetcode;
 
+import java.util.Arrays;
+
 /*
- Given an array S of n integers, find three integers in S such that the sum is closest to a given number, target. Return the sum of the three integers. You may assume that each input would have exactly one solution.
+ Given an array S of n integers, find three integers in S such that the sum is closest to a given number, target.
+ Return the sum of the three integers. You may assume that each input would have exactly one solution.
 
  For example, given array S = {-1 2 1 -4}, and target = 1.
 
@@ -9,48 +12,55 @@ package leetcode;
  */
 
 public class ThreeSumClosest {
-	int[] result = new int[3];
-	int close = 0;
 
-	public int threeSumClosest(int[] num, int target) {
-		if (num == null)
+	public int threeSumClosest2(int[] num, int target) {
+
+		int close = Integer.MAX_VALUE;
+		int ret = 0;
+		int n = num.length;
+		if (num == null || num.length == 0)
 			return 0;
 		if (num.length <= 3) {
-			int sum = 0;
-			for (int i = 0; i < num.length; i++) {
-				sum += num[i];
+
+			for (int i = 0; i < n; i++) {
+				ret += num[i];
 			}
-			return sum;
-		} else {
-			close = num[0] + num[1] + num[2];
-			subset(num, target, 0, 0);
-			return close;
+			return ret;
 		}
+
+		Arrays.sort(num);
+		for (int i = 0; i < n - 2; i++) {
+
+			int j = i + 1;
+			int k = n - 1;
+			while (j < k) {
+				int temp = 0;
+				temp += num[i];
+				temp += num[j];
+				temp += num[k];
+				if (temp == target)
+					return temp;
+				else {
+					if (Math.abs(temp - target) < close) {
+						close = Math.abs(temp - target);
+						ret = temp;
+					}
+					if (temp > target)
+						k--;
+					if (temp < target)
+						j++;
+				}
+			}
+
+		}
+
+		return ret;
+
 	}
 
-	void subset(int[] num, int target, int lvl, int count) {
-		if (lvl == num.length && count < 3) {
-			return;
-		} else if (count == 3) {
-			int temp = 0;
-			for (int i = 0; i < 3; i++) {
-				temp += result[i];
-			}
-			int min = Math.abs(close - target);
-			int curMin = Math.abs(temp - target);
-			if (curMin < min) {
-				close = temp;
-				return;
-			} else {
-				return;
-			}
-		} else if (close == target) {
-			return;
-		} else {
-			result[count] = num[lvl];
-			subset(num, target, lvl + 1, count + 1);
-			result[count] = 0;
-			subset(num, target, lvl + 1, count);
-		}
-	}
 }
+
+/*
+ * 参照3sum 选定一个点 另外两个点夹击
+ * 
+ */

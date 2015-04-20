@@ -45,3 +45,7 @@ public class ValidParentheses {
 		}
 	}
 }
+
+/*
+ 压stack 出stack
+*/

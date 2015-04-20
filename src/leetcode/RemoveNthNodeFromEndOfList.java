@@ -15,7 +15,28 @@ package leetcode;
  */
 
 public class RemoveNthNodeFromEndOfList {
+	
 	public ListNode removeNthFromEnd(ListNode head, int n) {
+
+	    ListNode start = new ListNode(0);
+	    ListNode slow = start, fast = start;
+	    slow.next = head;
+
+	    //Move fast in front so that the gap between slow and fast becomes n
+	    for(int i=1; i<=n+1; i++)   {
+	        fast = fast.next;
+	    }
+	    //Move fast to the end, maintaining the gap
+	    while(fast != null) {
+	        slow = slow.next;
+	        fast = fast.next;
+	    }
+	    //Skip the desired node
+	    slow.next = slow.next.next;
+	    return start.next;
+	}
+	
+	public ListNode removeNthFromEndOld (ListNode head, int n) {
 		int i = 0;
 		ListNode node = head;
 		while (node != null) {
@@ -34,3 +55,8 @@ public class RemoveNthNodeFromEndOfList {
 		return head;
 	}
 }
+
+/*
+ * 老方法: 遍历两次 第一次求长度 第二次删 复杂度O(2n)
+ * 新方法：两个指针 快指针先跑出n个空档， 然后一起跑， 直到快的reach end 
+ */
