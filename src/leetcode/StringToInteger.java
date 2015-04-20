@@ -1,5 +1,8 @@
 package leetcode;
 
+import org.junit.Assert;
+import org.junit.Test;
+
 /*
  Implement atoi to convert a string to an integer.
 
@@ -19,11 +22,7 @@ package leetcode;
  */
 
 public class StringToInteger {
-	
-	public static void main(String[] args) {
-		StringToInteger s = new StringToInteger();
-		System.out.println(s.atoi("123"));
-	}
+
 
 	public int atoi(String str) {
 
@@ -48,7 +47,6 @@ public class StringToInteger {
 		while (str.length() > i && str.charAt(i) >= '0' && str.charAt(i) <= '9') {
 
 			ret = ret * 10 + (str.charAt(i) - '0');
-			
 			i++;
 
 		}
@@ -62,6 +60,17 @@ public class StringToInteger {
 			return Integer.MIN_VALUE;
 
 		return (int) ret;
+	}
+	
+	@Test
+	public void atoiTest(){
+		
+		
+		Assert.assertEquals(123, atoi("123"));
+		Assert.assertEquals(123, atoi(" 123 "));
+		Assert.assertEquals(0 , atoi(""));
+		Assert.assertEquals(Integer.MAX_VALUE, atoi("12394394394389439"));
+		
 	}
 
 }

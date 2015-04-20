@@ -46,12 +46,12 @@ public class RegularExpressionMatching {
 			else
 				return isMatch(s.substring(1), p.substring(1));
 		} else {
-			if (isMatch(s, p.substring(2))) {
+			if (isMatch(s, p.substring(2))) {	//coz x. canbe a empty string
 				return true;
 			}
 
 			int i = 0;
-			while (i < s.length()
+			while (i < s.length()				//recursive call check
 					&& (s.charAt(i) == p.charAt(0) || p.charAt(0) == '.')) {
 				if (isMatch(s.substring(i + 1), p.substring(2))) {
 					return true;

@@ -1,23 +1,31 @@
 package leetcode;
 
 /*
-Reverse digits of an integer.
+ Reverse digits of an integer.
 
-Example1: x = 123, return 321
-Example2: x = -123, return -321 
+ Example1: x = 123, return 321
+ Example2: x = -123, return -321 
  */
 
 public class ReverseInteger {
-	   public int reverse(int x) {
-	        String str = String.valueOf(x);
-	        char[] chars = str.toCharArray();
-	        StringBuilder sb = new StringBuilder();
-	        if ('-' == chars[0]) sb.append("-");
-	        for(int i=chars.length-1; i>=0; i--){
-	        	if(!('-' == chars[i])) sb.append(chars[i]);
-	        }
-	        
-	        int result = Integer.valueOf(sb.toString());
-	        return result;
-	    }
+	public int reverse(int x) {
+		int ret = 0;
+
+		while (x != 0) {
+			int tail = x % 10;
+			int newResult = ret * 10 + tail;
+			if ((newResult - tail) / 10 != ret) {
+				return 0;
+			}
+			ret = newResult;
+			x = x / 10;
+		}
+
+		return ret;
+	}
 }
+
+/*
+ * 除法得余数 新结果每次乘10加余数
+ * 中间的对比 如果结果不一样 说明到边界了
+*/
