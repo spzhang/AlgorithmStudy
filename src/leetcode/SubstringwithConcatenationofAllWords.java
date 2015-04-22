@@ -58,3 +58,5 @@ public class SubstringwithConcatenationofAllWords {
 	}
 
 }
+
+// 将字符串依次添加到hashmap里, 循环原字符串, 每次检查长度为候选数组之和, 碰见不在map里就直接返回, 不然counter 减一

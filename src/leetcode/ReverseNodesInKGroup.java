@@ -28,7 +28,8 @@ public class ReverseNodesInKGroup {
 			ListNode start = nextStart;
 			end = start;
 			int i = 0;
-			while (end != null && i < k - 1) {
+			
+			while (end != null && i < k - 1) {		//get some elements
 				i++;
 				end = end.next;
 			}

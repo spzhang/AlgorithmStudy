@@ -49,3 +49,7 @@ public class MergeKSortedLists {
 		return hd.next;
 	}
 }
+
+/*
+ * i, j将list对半分了 divide 到分到最小的单元 要么是 0， 1， 2 三中的一个情况， 然后用merge conquar
+ */

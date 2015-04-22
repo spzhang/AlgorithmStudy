@@ -7,10 +7,10 @@ package leetcode;
  */
 public class ImplementstrStr {
 	public int strStr(String haystack, String needle) {
-		if (haystack == null || needle == null)
-			return -1;
-		if (needle == "")
+		if (needle.length() == 0)
 			return 0;
+	    if (haystack.length() == 0)
+	        return -1;
 
 		for (int i = 0; i < haystack.length(); i++) {
 			if (i + needle.length() > haystack.length())
@@ -23,3 +23,5 @@ public class ImplementstrStr {
 
 	}
 }
+
+// 不能对比 string == ""

@@ -36,3 +36,8 @@ public class DivideTwoIntegers {
 		return isNeg ? -ret : ret;
 	}
 }
+
+// 位移求符号
+// 边界处理除数和被除数负数的最大值
+// 运用位移快速求余
+

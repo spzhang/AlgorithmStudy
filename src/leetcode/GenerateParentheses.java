@@ -16,8 +16,8 @@ public class GenerateParentheses {
 
 		char[] result = new char[2 * n];
 		int pos = 0;
-		int l = n;
-		int r = n;
+		int l = n;	//left number of left parentheses
+		int r = n;	//left number of right parentheses
 		List<String> resultList = new ArrayList<String>();
 		proc(result, pos, l, r, n, resultList);
 		return resultList;
@@ -26,7 +26,7 @@ public class GenerateParentheses {
 
 	void proc(char[] result, int pos, int l, int r, int n,
 			List<String> resultList) {
-		if (pos == 2 * n) {
+		if (pos == 2 * n) {		//final point!!
 			String vaild = new String(result);
 			if (!resultList.contains(vaild)) {
 				resultList.add(vaild);
@@ -40,7 +40,7 @@ public class GenerateParentheses {
 				proc(l_result, pos + 1, l - 1, r, n, resultList);
 			}
 
-			if (check(l, r)) {
+			if (check(l, r)) {		//right parentheses cannot have more than left
 				r_result[pos] = ')';
 				proc(r_result, pos + 1, l, r - 1, n, resultList);
 			}

@@ -28,3 +28,5 @@ public class RemoveDuplicatesFromSortedArray {
 		return count;
 	}
 }
+
+// 这个是求长度 所以很简单 但其实应该首尾交换夹

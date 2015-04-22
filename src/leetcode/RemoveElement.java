@@ -35,3 +35,5 @@ public class RemoveElement {
 		A[a] = tmp;
 	}
 }
+
+// 首尾交换夹出来
