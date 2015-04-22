@@ -47,3 +47,5 @@ public class SearchInRotatedSortedArray {
 		return -1;
 	}
 }
+
+// 还是binary search 多次考虑递增区间

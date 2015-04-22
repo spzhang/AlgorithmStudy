@@ -34,6 +34,7 @@ public class SudokuSolver {
 		}
 
 	}
+
 	class BlankSpot {
 		int i;
 		int j;

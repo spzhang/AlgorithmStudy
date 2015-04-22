@@ -87,3 +87,5 @@ public class ValidSudoku {
 		return true;
 	}
 }
+
+// 用数组存临时结果

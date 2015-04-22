@@ -47,3 +47,5 @@ public class CountAndSay {
 		return sb.toString();
 	}
 }
+
+// 先读 然后得到结果迭代到下次
