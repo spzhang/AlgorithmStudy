@@ -16,3 +16,5 @@ public class RotateImage {
         }
     }
 }
+
+// 旋转一半就够 注意边界

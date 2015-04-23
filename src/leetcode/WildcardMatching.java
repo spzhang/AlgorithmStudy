@@ -54,3 +54,6 @@ public class WildcardMatching {
 		return pi == p.length();
 	}
 }
+
+// 贪心扫描 知道string 和pattern都到尾部
+// 用一个特殊index记录当前*的开始位置和一个counter记录其match的长度

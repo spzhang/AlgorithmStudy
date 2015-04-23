@@ -48,3 +48,5 @@ public class FirstMissingPositive {
 		A[l] = tmp;
 	}
 }
+
+// 桶排序 先求出候选整数的最大范围 用正负标记桶是否被占 变成复数表示已经被统计过了

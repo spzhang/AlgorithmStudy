@@ -128,3 +128,6 @@ public class MultiplyStrings {
 		return result.reverse().toString();
 	}
 }
+
+// 构建一个拥有偏移量的加法
+// 四位数 四位数的乘 使成绩不会大于Integer.MAX_VALUE

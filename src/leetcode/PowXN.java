@@ -6,13 +6,11 @@ package leetcode;
  divide and conquer
  */
 public class PowXN {
-	double result = 1;
-
-	public double pow(double x, int n) {
+	public double myPow(double x, int n) {
 		double temp = x;
 		if (n == 0)
 			return 1;
-		temp = pow(x, n / 2);
+		temp = myPow(x, n / 2);
 		if (n % 2 == 0)
 			return temp * temp;
 		else {
@@ -23,3 +21,5 @@ public class PowXN {
 		}
 	}
 }
+
+// 递归 一直divide 到n==0

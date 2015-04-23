@@ -15,7 +15,7 @@ public class TrappingRainWater {
 		int i = 0;
 		int j = n - 1;
 		int result = 0;
-		int max = A[i];
+		int max = A[i];		//current max height
 		int imax = A[i];
 		int jmax = A[j];
 		while (i < j) {
@@ -50,3 +50,5 @@ public class TrappingRainWater {
 		return result;
 	}
 }
+
+//不断维持一个最高值 从两边夹逼

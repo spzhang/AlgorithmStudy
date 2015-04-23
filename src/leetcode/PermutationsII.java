@@ -44,8 +44,9 @@ public class PermutationsII {
 					continue;
 				else {
 					pre = candidate.get(i);
-					LinkedList<Integer> candidateN = new LinkedList<Integer>(candidate);
-					ArrayList<Integer> listN = new ArrayList<Integer>( list);
+					LinkedList<Integer> candidateN = new LinkedList<Integer>(
+							candidate);
+					ArrayList<Integer> listN = new ArrayList<Integer>(list);
 					candidateN.remove(i);
 					listN.add(candidate.get(i));
 					buildList(candidateN, listN);
@@ -56,3 +57,5 @@ public class PermutationsII {
 
 	}
 }
+
+// 注意回溯时候的重复

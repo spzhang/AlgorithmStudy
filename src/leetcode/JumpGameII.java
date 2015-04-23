@@ -23,7 +23,6 @@ public class JumpGameII {
 		int max = 0;
 		int lastmax = 0;
 		for (int cur = 0; cur < n; cur++) {
-
 			if (cur + A[cur] >= n - 1)
 				return result[lastmax] + 1;
 			if (cur + A[cur] > max) {
@@ -41,3 +40,5 @@ public class JumpGameII {
 		return result[n - 1];
 	}
 }
+
+// 贪心 步步推进
