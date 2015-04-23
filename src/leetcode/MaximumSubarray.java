@@ -8,7 +8,17 @@ package leetcode;
  the contiguous subarray [4,−1,2,1] has the largest sum = 6. 
  */
 public class MaximumSubarray {
-	public int maxSubArray(int[] A) {
+
+	public int maxSubArray(int[] nums) {
+		int maxSoFar = nums[0], maxEndingHere = nums[0];
+		for (int i = 1; i < nums.length; ++i) {
+			maxEndingHere = Math.max(maxEndingHere + nums[i], nums[i]);
+			maxSoFar = Math.max(maxSoFar, maxEndingHere);
+		}
+		return maxSoFar;
+	}
+
+	public int maxSubArrayO2N(int[] A) {
 		int n = A.length;
 		int currentMax = Integer.MIN_VALUE;
 		int maxMax = Integer.MIN_VALUE;

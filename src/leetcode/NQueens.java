@@ -46,15 +46,17 @@ public class NQueens {
 
 	boolean check(int lvl, int i) {
 		for (int j = 0; j < lvl; j++) {
-			if (result[j] == i)
+			if (result[j] == i)			// check vertical
 				return false;
 			if (Math.abs(lvl - j) == Math.abs(result[j] - i))
+				// check across
 				return false;
 		}
 		return true;
 	}
 
-	String buildString(int i, int n) {
+	String buildString(int i, int n) { 
+		// convert int array to string
 		int j = 0;
 		StringBuilder sb = new StringBuilder();
 		while (j < n) {
@@ -68,3 +70,5 @@ public class NQueens {
 		return sb.toString();
 	}
 }
+
+// backtracking...

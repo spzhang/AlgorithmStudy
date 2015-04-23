@@ -35,3 +35,5 @@ public class JumpGame {
 		return true;
 	}
 }
+
+// 贪心 一直找最远

@@ -14,11 +14,12 @@ package leetcode;
 
 public class LengthOfLastWord {
 	public int lengthOfLastWord(String s) {
+
 		char[] chars = s.toCharArray();
 		int count = 0;
 		int pre = count;
 		for (int i = 0; i < chars.length; i++) {
-			if (' ' == chars[i]) {
+			if (Character.isWhitespace(chars[i])) {
 				if (count > 0) {
 					pre = count;
 				}

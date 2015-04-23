@@ -54,3 +54,4 @@ public class InsertInterval {
 	}
 }
 
+// 有个boolean flag来追踪 new interval是佛加过

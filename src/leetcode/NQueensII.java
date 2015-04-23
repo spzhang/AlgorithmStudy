@@ -8,28 +8,28 @@ package leetcode;
 
 public class NQueensII {
 
-	public static int totalNQueens(int n) {
+	public int totalNQueens(int n) {
 		int[] queenList = new int[n];
 		return placeQueen(queenList, 0, n);
 	}
 
-	public static int placeQueen(int[] queenList, int row, int n) {
+	public int placeQueen(int[] queenList, int row, int n) {
 		if (row == n) {
 			return 1;
 		}
 
-		int cnt = 0;
+		int count = 0;
 
 		for (int col = 0; col < n; col++) {
 			if (isSafe(queenList, row, col)) {
 				queenList[row] = col;
-				cnt += placeQueen(queenList, row + 1, n);
+				count += placeQueen(queenList, row + 1, n);
 			}
 		}
-		return cnt;
+		return count;
 	}
 
-	public static boolean isSafe(int[] queenList, int row, int col) {
+	public boolean isSafe(int[] queenList, int row, int col) {
 		for (int preRow = 0; preRow < row; preRow++) {
 			int preCol = queenList[preRow];
 			if (preRow == row) {
@@ -42,7 +42,6 @@ public class NQueensII {
 				return false;
 			}
 			if (preRow + preCol == row + col) {
-
 				return false;
 			}
 		}

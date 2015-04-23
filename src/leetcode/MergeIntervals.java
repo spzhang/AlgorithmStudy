@@ -64,3 +64,5 @@ public class MergeIntervals {
 	}
 
 }
+
+// 对区间进行排序 第一个数不一样直接得先后 不然比较第二个数 然后合并
