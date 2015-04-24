@@ -1,7 +1,8 @@
 package leetcode;
 
 /*
- Given a m x n grid filled with non-negative numbers, find a path from top left to bottom right which minimizes the sum of all numbers along its path.
+ Given a m x n grid filled with non-negative numbers, find a path from top left to bottom right
+ which minimizes the sum of all numbers along its path.
 
  Note: You can only move either down or right at any point in time.
  */
@@ -32,3 +33,5 @@ public class MinimumPathSum {
 		return temp[m - 1][n - 1];
 	}
 }
+
+// 跟unique path的思路是一样一样的

@@ -59,3 +59,5 @@ public class ValidNumber {
 	}
 
 }
+
+// 关键要知道数字的表现形式 用三个flag来标记数字 指数和小数点

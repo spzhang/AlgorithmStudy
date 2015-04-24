@@ -11,7 +11,7 @@ public class Sqrtx {
 		if (x == 0 || x == 1) {
 			return x;
 		}
-		int l = 1, r = x, res = 1;
+		int l = 1, r = x, ret = 1;
 		while (l <= r) {
 			int m = (l + r) / 2;
 			if (m == x / m) {
@@ -20,9 +20,11 @@ public class Sqrtx {
 				r = m - 1;
 			} else {
 				l = m + 1;
-				res = m;
+				ret = m;
 			}
 		}
-		return res;
+		return ret;
 	}
 }
+
+// 二分查找 挨个试出来

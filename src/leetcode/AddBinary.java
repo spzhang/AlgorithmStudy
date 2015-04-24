@@ -43,7 +43,7 @@ public class AddBinary {
 		}
 
 		while (n != 0) {
-			int i = Integer.valueOf(a.charAt(n - 1)) + carry - 48;
+			int i = Integer.valueOf(a.charAt(n - 1)) + carry - '0';
 			if (i == 0) {
 				sb.append(0);
 				carry = 0;
@@ -58,7 +58,7 @@ public class AddBinary {
 		}
 
 		while (m != 0) {
-			int i = Integer.valueOf(b.charAt(m - 1)) + carry - 48;
+			int i = Integer.valueOf(b.charAt(m - 1)) + carry - '0';
 			if (i == 0) {
 				sb.append(0);
 				carry = 0;
@@ -78,3 +78,5 @@ public class AddBinary {
 
 	}
 }
+
+// 没什么特别 注意进位就好了

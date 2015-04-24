@@ -33,12 +33,12 @@ public class TextJustification {
 
 	public List<String> fullJustify(String[] words, int L) {
 		List<String> currList = new ArrayList<String>();
-		List<String> res = new ArrayList<String>();
+		List<String> ret = new ArrayList<String>();
 		int counts = 0, len = 0;
 		StringBuilder sb = new StringBuilder();
 
 		while (counts < words.length) {
-			// 1 put the first word into the line
+			// 1. put the first word into the line
 			sb.setLength(0);
 			sb.append(words[counts]);
 			currList.clear();
@@ -53,8 +53,7 @@ public class TextJustification {
 				counts++;
 			}
 
-			// 3. Calculate the number of spaces we need and insert into the
-			// currList
+			// 3. Calculate the number of spaces we need and insert into the curlist
 			if (counts < words.length && currList.size() > 0) {
 				int numSpaces = L - len;
 				int avg = numSpaces / currList.size();
@@ -70,9 +69,9 @@ public class TextJustification {
 				}
 				appendSpace(sb, L - len);
 			}
-			res.add(sb.toString());
+			ret.add(sb.toString());
 		}
-		return res;
+		return ret;
 	}
 
 	private void appendSpace(StringBuilder sb, int n) {
@@ -82,3 +81,5 @@ public class TextJustification {
 	}
 
 }
+
+// 逐行填字 空格个数通过除法算出来
