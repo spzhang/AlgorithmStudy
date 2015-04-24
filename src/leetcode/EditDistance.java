@@ -34,3 +34,5 @@ public class EditDistance {
 		return Edit[n][m];
 	}
 }
+
+// dp 储存从word1的n长度 变换到word2 m长度 需要的步数

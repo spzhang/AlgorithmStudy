@@ -10,6 +10,8 @@ import java.util.LinkedList;
  path = "/a/./b/../../c/", => "/c"
  */
 public class SimplifyPath {
+	
+	
 	public String simplifyPath(String path) {
 		StringBuffer sb = new StringBuffer();
 		LinkedList<String> stack = new LinkedList<String>();
@@ -32,8 +34,9 @@ public class SimplifyPath {
 		} else if (!sb.toString().equals(".") && sb.length() != 0) {
 			stack.push(sb.toString());
 		}
-		sb = new StringBuffer();
-		while (!stack.isEmpty()) {
+		sb = new StringBuffer();		// append last word
+		
+		while (!stack.isEmpty()) {		// reset need /+word
 			sb.append("/");
 			sb.append(stack.removeLast());
 		}
@@ -43,3 +46,5 @@ public class SimplifyPath {
 
 	}
 }
+
+// 用stack来缓存 用个sb重新构造

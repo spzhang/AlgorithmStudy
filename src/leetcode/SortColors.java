@@ -38,3 +38,5 @@ public class SortColors {
 		}
 	}
 }
+
+// 两个坐标分别维护颜色分界的边界 除了上面的重新生成 也可以用inspace swap
